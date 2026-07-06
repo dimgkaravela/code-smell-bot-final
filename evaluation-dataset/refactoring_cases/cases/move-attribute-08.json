@@ -1,0 +1,26 @@
+{
+  "id": "move-attribute-08",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/crate/crate",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "sql/src/main/java/io/crate/planner/node/dql/join/NestedLoop.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-attribute-08.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "sql/src/main/java/io/crate/planner/node/dql/join/NestedLoop.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "NestedLoop",
+      "note": "Move Attribute private rightMergeNode : MergeNode from class io.crate.planner.node.dql.join.NestedLoop to private rightMergeNode : MergeNode from class io.crate.planner.node.dql.join.NestedLoopNode",
+      "suggestedRefactoring": "Move Attribute",
+      "refactoringNote": "Move Attribute private rightMergeNode : MergeNode from class io.crate.planner.node.dql.join.NestedLoop to private rightMergeNode : MergeNode from class io.crate.planner.node.dql.join.NestedLoopNode"
+    }
+  ]
+}

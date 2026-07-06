@@ -1,0 +1,26 @@
+{
+  "id": "softdevii-2025-usercontroller",
+  "source": "SoftDevII-Project-2025-Backlog-derived",
+  "repository": "evaluation/softdevii-2025",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/main/java/myy803/socialbookstore/controllers/UserController.java",
+      "status": "added",
+      "fileContentPath": "../files/UserController.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/myy803/socialbookstore/controllers/UserController.java",
+      "line": 35,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "UserController",
+      "severity": "Major",
+      "note": "UserController is a God Class that handles nearly all user-facing use cases and mixes HTTP request handling with business logic for profiles, offers, requests, search, and recommendations.",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Split the class into focused controllers for profiles, book offers, book requests, search, and recommendations. Move business logic into corresponding service classes using Extract Class, Move Method, and Move Field."
+    }
+  ]
+}

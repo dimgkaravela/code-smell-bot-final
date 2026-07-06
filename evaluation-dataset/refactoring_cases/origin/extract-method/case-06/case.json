@@ -1,0 +1,12 @@
+{
+  "id": "extract-method-06",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Method",
+  "repository": "https://github.com/crashub/crash",
+  "commit": "2801269c7e47bd6e243612654a74cee809d20959",
+  "parentCommit": "3224abedd01aaa85aae9ae3399efe92557f42e55",
+  "commitUrl": "https://github.com/crashub/crash/commit/2801269c7e47bd6e243612654a74cee809d20959",
+  "beforeFile": "connectors/ssh/src/main/java/org/crsh/auth/FilePublicKeyProvider.java",
+  "afterFile": "connectors/ssh/src/main/java/org/crsh/auth/FilePublicKeyProvider.java",
+  "description": "Extract Method private convertPemKeyPair(pemKeyPair PEMKeyPair) : KeyPair extracted from public loadKeys() : Iterable<KeyPair> in class org.crsh.auth.FilePublicKeyProvider"
+}

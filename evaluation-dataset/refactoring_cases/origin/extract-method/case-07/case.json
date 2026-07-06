@@ -1,0 +1,12 @@
+{
+  "id": "extract-method-07",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Method",
+  "repository": "https://github.com/oblac/jodd",
+  "commit": "722ef9156896248ef3fbe83adde0f6ff8f46856a",
+  "parentCommit": "0cea98ced0330c8bdea8d22c1a21b8322ef1c5db",
+  "commitUrl": "https://github.com/oblac/jodd/commit/722ef9156896248ef3fbe83adde0f6ff8f46856a",
+  "beforeFile": "jodd-http/src/main/java/jodd/http/HttpBase.java",
+  "afterFile": "jodd-http/src/main/java/jodd/http/HttpBase.java",
+  "description": "Extract Method protected resolveFormEncoding() : String extracted from protected formBuffer() : Buffer in class jodd.http.HttpBase"
+}

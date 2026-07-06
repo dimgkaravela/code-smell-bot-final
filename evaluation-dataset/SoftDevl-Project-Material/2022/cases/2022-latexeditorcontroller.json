@@ -1,0 +1,26 @@
+{
+  "id": "softdevii-2022-latexeditorcontroller",
+  "source": "SoftDevII-Project-2022-Backlog-derived",
+  "repository": "evaluation/softdevii-2022",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/controller/LatexEditorController.java",
+      "status": "added",
+      "fileContentPath": "../files/LatexEditorController.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/controller/LatexEditorController.java",
+      "line": 21,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "LatexEditorController",
+      "severity": "Major",
+      "note": "The constructor repeatedly inserts command names into the commands map and passes the same string to CommandFactory.createCommand().",
+      "suggestedRefactoring": "Substitute Algorithm",
+      "refactoringNote": "Store the command names in a collection or properties file, then loop over them to create and register the corresponding Command objects."
+    }
+  ]
+}

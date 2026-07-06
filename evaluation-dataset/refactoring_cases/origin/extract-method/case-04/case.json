@@ -1,0 +1,12 @@
+{
+  "id": "extract-method-04",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Method",
+  "repository": "https://github.com/JetBrains/intellij-community",
+  "commit": "7a4dab88185553bd09e827839fdf52e870ef7088",
+  "parentCommit": "80ce3478fdef1633dbd87e27d63ec47ee2d68b93",
+  "commitUrl": "https://github.com/JetBrains/intellij-community/commit/7a4dab88185553bd09e827839fdf52e870ef7088",
+  "beforeFile": "java/java-tests/testSrc/com/intellij/codeInsight/JavaExternalDocumentationTest.java",
+  "afterFile": "java/java-tests/testSrc/com/intellij/codeInsight/JavaExternalDocumentationTest.java",
+  "description": "Extract Method private getDataFile(name String) : File extracted from private getJarFile(name String) : VirtualFile in class com.intellij.codeInsight.JavaExternalDocumentationTest"
+}

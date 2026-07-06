@@ -1,0 +1,43 @@
+{
+  "id": "sacs-plantuml-plantumltask",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/PlantUmlTask.java",
+      "status": "added",
+      "fileContentPath": "../files/PlantUmlTask.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/PlantUmlTask.java",
+      "line": 82,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "PlantUmlTask",
+      "severity": "Major",
+      "note": "PlantUmlTask combines Ant task configuration, file scanning, output management, and PlantUML execution in one large class."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/PlantUmlTask.java",
+      "line": 152,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "manageFileList",
+      "severity": "Major",
+      "note": "manageFileList handles file-list scanning, path resolution, and processing orchestration in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/PlantUmlTask.java",
+      "line": 167,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "manageFileSet",
+      "severity": "Major",
+      "note": "manageFileSet handles directory scanning, included file iteration, and processing orchestration in one method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

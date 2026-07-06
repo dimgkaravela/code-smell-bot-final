@@ -1,0 +1,26 @@
+{
+  "id": "extract-method-02",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/rstudio/rstudio",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "src/gwt/src/org/rstudio/core/client/widget/ScrollableToolbarPopupMenu.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-method-02.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/gwt/src/org/rstudio/core/client/widget/ScrollableToolbarPopupMenu.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "wrapMenuBar",
+      "note": "Extract Method protected setMaxHeight(maxHeight int) : void extracted from protected wrapMenuBar(menuBar ToolbarMenuBar) : Widget in class org.rstudio.core.client.widget.ScrollableToolbarPopupMenu",
+      "suggestedRefactoring": "Extract Method",
+      "refactoringNote": "Extract Method protected setMaxHeight(maxHeight int) : void extracted from protected wrapMenuBar(menuBar ToolbarMenuBar) : Widget in class org.rstudio.core.client.widget.ScrollableToolbarPopupMenu"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "sacs-libgdx-pixmaploader",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/PixmapLoader.java",
+      "status": "added",
+      "fileContentPath": "../files/PixmapLoader.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/PixmapLoader.java",
+      "line": 36,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "loadAsync",
+      "severity": "Major",
+      "note": "loadAsync is labeled as Feature Envy toward Pixmap because the loader is centered on Pixmap creation and lifecycle details."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/PixmapLoader.java",
+      "line": 42,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "loadSync",
+      "severity": "Major",
+      "note": "loadSync is labeled as Feature Envy toward Pixmap because it mainly returns and clears Pixmap-specific state."
+    }
+  ],
+  "evaluateRefactoring": false
+}

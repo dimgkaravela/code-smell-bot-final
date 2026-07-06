@@ -1,0 +1,26 @@
+{
+  "id": "move-attribute-02",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/raphw/byte-buddy",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "byte-buddy-dep/src/main/java/net/bytebuddy/description/type/TypeDescription.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-attribute-02.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "byte-buddy-dep/src/main/java/net/bytebuddy/description/type/TypeDescription.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "Extractor",
+      "note": "Move Attribute private substitutionMatcher : ElementMatcher<? super TypeDescription> from class net.bytebuddy.dynamic.TargetType.TypeVariableProxy.Extractor to private substitutionMatcher : ElementMatcher<? super TypeDescription> from class net.bytebuddy.description.type.generic.GenericTypeDescription.Visitor.Substitutor.ForRawType",
+      "suggestedRefactoring": "Move Attribute",
+      "refactoringNote": "Move Attribute private substitutionMatcher : ElementMatcher<? super TypeDescription> from class net.bytebuddy.dynamic.TargetType.TypeVariableProxy.Extractor to private substitutionMatcher : ElementMatcher<? super TypeDescription> from class net.bytebuddy.description.type.generic.GenericTypeDescription.Visitor.Substitutor.ForRawType"
+    }
+  ]
+}

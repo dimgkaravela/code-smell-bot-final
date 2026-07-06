@@ -1,0 +1,12 @@
+{
+  "id": "extract-class-05",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Class",
+  "repository": "https://github.com/eucalyptus/eucalyptus",
+  "commit": "5a38d0bca0e48853c3f7c00a0f098bada64797df",
+  "parentCommit": "df5eed954d73851cd0a2def4275d72916551c348",
+  "commitUrl": "https://github.com/eucalyptus/eucalyptus/commit/5a38d0bca0e48853c3f7c00a0f098bada64797df",
+  "beforeFile": "clc/modules/cloudwatch-backend/src/main/java/com/eucalyptus/cloudwatch/domain/metricdata/MetricDataQueue.java",
+  "afterFile": "clc/modules/cloudwatch-backend/src/main/java/com/eucalyptus/cloudwatch/domain/metricdata/MetricDataQueue.java",
+  "description": "Extract Class com.eucalyptus.cluster.callback.cloudwatch.AbsoluteMetricQueue from class com.eucalyptus.cloudwatch.domain.metricdata.MetricDataQueue"
+}

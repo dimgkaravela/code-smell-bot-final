@@ -1,0 +1,70 @@
+{
+  "id": "sacs-libgdx-stage",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/Stage.java",
+      "status": "added",
+      "fileContentPath": "../files/Stage.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/Stage.java",
+      "line": 66,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "Stage",
+      "severity": "Major",
+      "note": "Stage combines rendering, input dispatch, focus management, viewport handling, and debug drawing in one large class."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/Stage.java",
+      "line": 139,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "drawDebug",
+      "severity": "Major",
+      "note": "drawDebug performs multiple debug-rendering setup, draw, and teardown steps in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/Stage.java",
+      "line": 219,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "fireEnterAndExit",
+      "severity": "Major",
+      "note": "fireEnterAndExit performs hit detection, event construction, listener dispatch, and ancestry checks in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/Stage.java",
+      "line": 298,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "touchDragged",
+      "severity": "Major",
+      "note": "touchDragged updates pointer state, builds input events, dispatches them, and handles fallback behavior in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/Stage.java",
+      "line": 334,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "touchUp",
+      "severity": "Major",
+      "note": "touchUp combines pointer bookkeeping, event dispatch, focus handling, and touch-focus cleanup in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/Stage.java",
+      "line": 491,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "cancelTouchFocus",
+      "severity": "Major",
+      "note": "cancelTouchFocus(Actor) cancels and dispatches touch-focus events while managing pooled event state in one method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

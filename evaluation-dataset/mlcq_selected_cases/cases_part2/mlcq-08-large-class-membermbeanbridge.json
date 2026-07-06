@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-08-large-class-membermbeanbridge",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/large_class/08_Large_Class_MemberMBeanBridge.java",
+                      "status":  "added",
+                      "fileContentPath":  "../large_class/08_Large_Class_MemberMBeanBridge.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/large_class/08_Large_Class_MemberMBeanBridge.java",
+                       "line":  131,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "MemberMBeanBridge",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 12244 labels org.apache.geode.management.internal.beans.MemberMBeanBridge as blob (class) at original lines 119-1725; converted to Large Class. Source: https://github.com/apache/geode/blob/8fd839e8b73e40bd2dfd14f331b587431bd35a66/geode-core/src/main/java/org/apache/geode/management/internal/beans/MemberMBeanBridge.java/#L119-L1725"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

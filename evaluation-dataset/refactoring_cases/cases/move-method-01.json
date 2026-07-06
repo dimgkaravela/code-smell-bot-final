@@ -1,0 +1,26 @@
+{
+  "id": "move-method-01",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/raphw/byte-buddy",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "byte-buddy-dep/src/main/java/net/bytebuddy/description/type/TypeDescription.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-method-01.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "byte-buddy-dep/src/main/java/net/bytebuddy/description/type/TypeDescription.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "onType",
+      "note": "Move Method public onType(typeDescription TypeDescription) : TypeVariableProxy from class net.bytebuddy.dynamic.TargetType.TypeVariableProxy.Extractor to public onType(typeDescription TypeDescription) : TypeVariableProxy from class net.bytebuddy.description.type.generic.GenericTypeDescription.Visitor.Substitutor.ForRawType",
+      "suggestedRefactoring": "Move Method",
+      "refactoringNote": "Move Method public onType(typeDescription TypeDescription) : TypeVariableProxy from class net.bytebuddy.dynamic.TargetType.TypeVariableProxy.Extractor to public onType(typeDescription TypeDescription) : TypeVariableProxy from class net.bytebuddy.description.type.generic.GenericTypeDescription.Visitor.Substitutor.ForRawType"
+    }
+  ]
+}

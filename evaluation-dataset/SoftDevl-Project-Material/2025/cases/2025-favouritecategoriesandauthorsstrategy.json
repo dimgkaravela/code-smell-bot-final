@@ -1,0 +1,26 @@
+{
+  "id": "softdevii-2025-favouritecategoriesandauthorsstrategy",
+  "source": "SoftDevII-Project-2025-Backlog-derived",
+  "repository": "evaluation/softdevii-2025",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/main/java/myy803/socialbookstore/datamodel/recomstrategies/FavouriteCategoriesAndAuthorsStrategy.java",
+      "status": "added",
+      "fileContentPath": "../files/FavouriteCategoriesAndAuthorsStrategy.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/myy803/socialbookstore/datamodel/recomstrategies/FavouriteCategoriesAndAuthorsStrategy.java",
+      "line": 19,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "recommend",
+      "severity": "Major",
+      "note": "recommend() duplicates the same user-profile lookup and recommendation-return workflow used by the other recommendation strategies.",
+      "suggestedRefactoring": "Form Template Method",
+      "refactoringNote": "Move recommend() into an abstract recommendation-strategy base class and leave retrieveRecommendedBooks() as the subclass-specific step."
+    }
+  ]
+}

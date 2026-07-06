@@ -1,0 +1,34 @@
+{
+  "id": "sacs-rxjava-parallelflowable",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/ParallelFlowable.java",
+      "status": "added",
+      "fileContentPath": "../files/ParallelFlowable.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/ParallelFlowable.java",
+      "line": 62,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "subscribe",
+      "severity": "Major",
+      "note": "subscribe is labeled as Feature Envy toward ParallelReduce in the SACS labels."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/ParallelFlowable.java",
+      "line": 43,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "ParallelFlowable",
+      "severity": "Major",
+      "note": "ParallelFlowable exposes many parallel stream creation, transformation, reduction, scheduling, and subscription operations in one large class."
+    }
+  ],
+  "evaluateRefactoring": false
+}

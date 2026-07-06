@@ -1,0 +1,26 @@
+{
+  "id": "extract-class-02",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/eclipse/jetty.project",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "jetty-maven-plugin/src/main/java/org/eclipse/jetty/maven/plugin/ScanTargetPattern.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-class-02.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "jetty-maven-plugin/src/main/java/org/eclipse/jetty/maven/plugin/ScanTargetPattern.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "ScanTargetPattern",
+      "note": "Extract Class org.eclipse.jetty.maven.plugin.ScanPattern from class org.eclipse.jetty.maven.plugin.ScanTargetPattern",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Extract Class org.eclipse.jetty.maven.plugin.ScanPattern from class org.eclipse.jetty.maven.plugin.ScanTargetPattern"
+    }
+  ]
+}

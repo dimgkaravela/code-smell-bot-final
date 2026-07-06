@@ -1,0 +1,25 @@
+{
+  "id": "sacs-jgrapht-capacityscalingminimumcostflowtest",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/CapacityScalingMinimumCostFlowTest.java",
+      "status": "added",
+      "fileContentPath": "../files/CapacityScalingMinimumCostFlowTest.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/CapacityScalingMinimumCostFlowTest.java",
+      "line": 37,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "CapacityScalingMinimumCostFlowTest",
+      "severity": "Major",
+      "note": "CapacityScalingMinimumCostFlowTest collects many minimum-cost-flow setup scenarios and assertions in one large test class."
+    }
+  ],
+  "evaluateRefactoring": false
+}

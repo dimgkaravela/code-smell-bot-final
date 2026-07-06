@@ -1,0 +1,34 @@
+{
+  "id": "figshare-mc-1-4-1-schemagrammar",
+  "source": "figshare-CodeSmellsDataset-LongParameterList_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/1.4.1/SchemaGrammar.java",
+      "status": "added",
+      "fileContentPath": "../files/1.4.1/SchemaGrammar.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/1.4.1/SchemaGrammar.java",
+      "line": 720,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "addElementDecl",
+      "severity": "Major",
+      "note": "LongParameterList_positive.csv labels SchemaGrammar.addElementDecl as a positive Long Parameter List method."
+    },
+    {
+      "file": "evaluation-dataset/figshare/files/1.4.1/SchemaGrammar.java",
+      "line": 785,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "addAttDef",
+      "severity": "Major",
+      "note": "LongParameterList_positive.csv labels SchemaGrammar.addAttDef as a positive Long Parameter List method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

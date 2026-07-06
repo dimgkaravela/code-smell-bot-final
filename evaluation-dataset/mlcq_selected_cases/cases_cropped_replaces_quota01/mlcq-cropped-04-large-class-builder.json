@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-04-large-class-builder",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/04_Large_Class_Builder.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/large_class/04_Large_Class_Builder.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/04_Large_Class_Builder.java",
+                       "line":  18,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "Builder",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 5064 labels org.apache.hadoop.hive.llap.daemon.rpc.LlapDaemonProtocolProtos.SignableVertexSpec.Builder as blob (class) at original lines 4496-6376; converted to Large Class. Cropped local source lines 4496-6400. Source: https://github.com/apache/hive/blob/2fa22bf360898dc8fd1408bfcc96e1c6aeaf9a53/llap-common/src/gen/protobuf/gen-java/org/apache/hadoop/hive/llap/daemon/rpc/LlapDaemonProtocolProtos.java/#L4496-L6376"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

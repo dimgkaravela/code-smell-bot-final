@@ -1,0 +1,26 @@
+{
+  "id": "extract-class-09",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/neo4j/neo4j",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "community/kernel/src/main/java/org/neo4j/kernel/impl/transaction/log/PhysicalTransactionCursor.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-class-09.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "community/kernel/src/main/java/org/neo4j/kernel/impl/transaction/log/PhysicalTransactionCursor.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "PhysicalTransactionCursor",
+      "note": "Extract Class org.neo4j.kernel.impl.transaction.log.LogEntryCursor from class org.neo4j.kernel.impl.transaction.log.PhysicalTransactionCursor",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Extract Class org.neo4j.kernel.impl.transaction.log.LogEntryCursor from class org.neo4j.kernel.impl.transaction.log.PhysicalTransactionCursor"
+    }
+  ]
+}

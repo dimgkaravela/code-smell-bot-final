@@ -1,0 +1,43 @@
+{
+  "id": "figshare-mc-2-2-1-lobmanager",
+  "source": "figshare-CodeSmellsDataset-MessageChains_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/2.2.1/LobManager.java",
+      "status": "added",
+      "fileContentPath": "../files/2.2.1/LobManager.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/2.2.1/LobManager.java",
+      "line": 274,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "initialiseLobSpace",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels LobManager.initialiseLobSpace as a positive Message Chains method."
+    },
+    {
+      "file": "evaluation-dataset/figshare/files/2.2.1/LobManager.java",
+      "line": 1348,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "setLength",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels LobManager.setLength as a positive Message Chains method."
+    },
+    {
+      "file": "evaluation-dataset/figshare/files/2.2.1/LobManager.java",
+      "line": 1434,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "divideBlockAddresses",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels LobManager.divideBlockAddresses as a positive Message Chains method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

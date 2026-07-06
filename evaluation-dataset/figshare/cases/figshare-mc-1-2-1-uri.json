@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-1-2-1-uri",
+  "source": "figshare-CodeSmellsDataset-LongParameterList_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/1.2.1/URI.java",
+      "status": "added",
+      "fileContentPath": "../files/1.2.1/URI.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/1.2.1/URI.java",
+      "line": 291,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "URI",
+      "severity": "Major",
+      "note": "LongParameterList_positive.csv labels the seven-parameter URI constructor as a positive Long Parameter List method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

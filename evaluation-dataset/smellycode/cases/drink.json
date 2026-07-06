@@ -1,0 +1,42 @@
+{
+  "id": "smellycode-drink",
+  "source": "SmellyCodeDataset-derived",
+  "repository": "evaluation/smellycode",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/main/java/example/Drink.java",
+      "status": "added",
+      "fileContentPath": "../files/Drink.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/example/Drink.java",
+      "line": 37,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "updateCustomerInfo",
+      "severity": "Major",
+      "note": "updateCustomerInfo takes five related customer contact fields that should be grouped into a parameter object."
+    },
+    {
+      "file": "src/main/java/example/Drink.java",
+      "line": 103,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "longMethod",
+      "severity": "Major",
+      "note": "longMethod combines order creation, confirmation, customer updates, notifications, discounts, loyalty, and complaint handling."
+    },
+    {
+      "file": "src/main/java/example/Drink.java",
+      "line": 117,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "duplicateMethod",
+      "severity": "Minor",
+      "note": "duplicateMethod repeats the same createOrder(\"Cola\") call inside one method."
+    }
+  ]
+}

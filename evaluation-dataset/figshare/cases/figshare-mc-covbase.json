@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-covbase",
+  "source": "figshare-CodeSmellsDataset-MessageChains_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/CovBase.java",
+      "status": "added",
+      "fileContentPath": "../files/CovBase.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/CovBase.java",
+      "line": 48,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "findCoverageJar",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels CovBase.findCoverageJar as a positive Message Chains method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

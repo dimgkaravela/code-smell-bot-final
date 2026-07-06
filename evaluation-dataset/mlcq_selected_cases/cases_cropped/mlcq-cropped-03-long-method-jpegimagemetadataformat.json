@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-03-long-method-jpegimagemetadataformat",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/03_Long_Method_JPEGImageMetadataFormat.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/long_method/03_Long_Method_JPEGImageMetadataFormat.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/03_Long_Method_JPEGImageMetadataFormat.java",
+                       "line":  36,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "JPEGImageMetadataFormat",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 10219 labels com.sun.imageio.plugins.jpeg.JPEGImageMetadataFormat.JPEGImageMetadataFormat as long method (function) at original lines 43-338; converted to Long Method. Cropped local source lines 25-378. Source: https://github.com/SAP/SapMachine/blob/6e62561730c46dc5000c39665c43951832192ceb/src/java.desktop/share/classes/com/sun/imageio/plugins/jpeg/JPEGImageMetadataFormat.java/#L43-L338"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

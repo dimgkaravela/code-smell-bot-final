@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-01-long-method-methodwriter",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/01_Long_Method_MethodWriter.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/long_method/01_Long_Method_MethodWriter.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/01_Long_Method_MethodWriter.java",
+                       "line":  36,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "resizeInstructions",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 8170 labels org.apache.tajo.org.objectweb.asm.MethodWriter#resizeInstructions as long method (function) at original lines 2145-2559; converted to Long Method. Cropped local source lines 2127-2601. Source: https://github.com/apache/tajo/blob/fb326195083959014c82c10187cb46de91ece33f/tajo-thirdparty/asm/src/main/java/org/apache/tajo/org/objectweb/asm/MethodWriter.java/#L2145-L2559"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-05-long-method-encodebase64-byte-boolean",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/long_method/05_Long_Method_encodeBase64_byte_boolean.java",
+                      "status":  "added",
+                      "fileContentPath":  "../long_method/05_Long_Method_encodeBase64_byte_boolean.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/long_method/05_Long_Method_encodeBase64_byte_boolean.java",
+                       "line":  230,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "encodeBase64",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 11792 labels org.apache.felix.mosgi.jmx.agent.mx4j.util.Base64Codec.encodeBase64 byte[]|boolean as long method (function) at original lines 218-377; converted to Long Method. Source: https://github.com/apache/felix/blob/a132994b250751d4ba3b115ee070ba397d9840ca/mosgi/jmx.agent/src/main/java/org/apache/felix/mosgi/jmx/agent/mx4j/util/Base64Codec.java/#L218-L377"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

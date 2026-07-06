@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-08-long-method-oplog",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/08_Long_Method_Oplog.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/long_method/08_Long_Method_Oplog.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/08_Long_Method_Oplog.java",
+                       "line":  36,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "recoverDrf",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 10697 labels org.apache.geode.internal.cache.Oplog#recoverDrf OplogEntryIdSet|boolean|boolean as long method (function) at original lines 1448-1589; converted to Long Method. Cropped local source lines 1430-1631. Source: https://github.com/apache/geode/blob/8fd839e8b73e40bd2dfd14f331b587431bd35a66/geode-core/src/main/java/org/apache/geode/internal/cache/Oplog.java/#L1448-L1589"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

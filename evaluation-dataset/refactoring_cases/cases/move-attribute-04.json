@@ -1,0 +1,26 @@
+{
+  "id": "move-attribute-04",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/apache/cassandra",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "src/java/org/apache/cassandra/hadoop/cql3/CqlInputFormat.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-attribute-04.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/java/org/apache/cassandra/hadoop/cql3/CqlInputFormat.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "AbstractColumnFamilyInputFormat",
+      "note": "Move Attribute private cfName : String from class org.apache.cassandra.hadoop.AbstractColumnFamilyInputFormat to private cfName : String from class org.apache.cassandra.hadoop.cql3.CqlInputFormat",
+      "suggestedRefactoring": "Move Attribute",
+      "refactoringNote": "Move Attribute private cfName : String from class org.apache.cassandra.hadoop.AbstractColumnFamilyInputFormat to private cfName : String from class org.apache.cassandra.hadoop.cql3.CqlInputFormat"
+    }
+  ]
+}

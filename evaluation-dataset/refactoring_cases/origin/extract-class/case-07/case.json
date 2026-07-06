@@ -1,0 +1,12 @@
+{
+  "id": "extract-class-07",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Class",
+  "repository": "https://github.com/languagetool-org/languagetool",
+  "commit": "bec15926deb49d2b3f7b979d4cfc819947a434ec",
+  "parentCommit": "e989aa4b73e2308a71a23c5fa90a385a616a60f1",
+  "commitUrl": "https://github.com/languagetool-org/languagetool/commit/bec15926deb49d2b3f7b979d4cfc819947a434ec",
+  "beforeFile": "languagetool-language-modules/uk/src/main/java/org/languagetool/tagging/uk/UkrainianTagger.java",
+  "afterFile": "languagetool-language-modules/uk/src/main/java/org/languagetool/tagging/uk/UkrainianTagger.java",
+  "description": "Extract Class org.languagetool.tagging.uk.CompoundTagger from class org.languagetool.tagging.uk.UkrainianTagger"
+}

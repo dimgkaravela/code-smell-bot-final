@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-01-feature-envy-nativeimagegenerator",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/feature_envy/01_Feature_Envy_NativeImageGenerator.java",
+                      "status":  "added",
+                      "fileContentPath":  "../feature_envy/01_Feature_Envy_NativeImageGenerator.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/feature_envy/01_Feature_Envy_NativeImageGenerator.java",
+                       "line":  500,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "doRun",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 12783 labels com.oracle.svm.hosted.NativeImageGenerator#doRun Map\u003cMethod, CEntryPointData\u003e|Method|JavaMainSupport|String|AbstractBootImage.NativeImageKind|SubstitutionProcessor|ForkJoinPool|ForkJoinPool as feature envy (function) at original lines 487-632; converted to Feature Envy. Source: https://github.com/oracle/graal/blob/4deb681aaaa79c248115037fc8e399c9876619fd/substratevm/src/com.oracle.svm.hosted/src/com/oracle/svm/hosted/NativeImageGenerator.java/#L487-L632"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

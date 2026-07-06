@@ -1,0 +1,12 @@
+{
+  "id": "move-method-08",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Move Method",
+  "repository": "https://github.com/droolsjbpm/drools",
+  "commit": "1bf2875e9d73e2d1cd3b58200d5300485f890ff5",
+  "parentCommit": "8540848f984ce6dea3a073fd4b6a84ef829bd69c",
+  "commitUrl": "https://github.com/droolsjbpm/drools/commit/1bf2875e9d73e2d1cd3b58200d5300485f890ff5",
+  "beforeFile": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+  "afterFile": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+  "description": "Move Method public notifyHalt() : void from class org.drools.core.common.DefaultAgenda to public notifyHalt() : void from class org.drools.core.phreak.SynchronizedBypassPropagationList"
+}

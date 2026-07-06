@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+*.log
+.DS_Store
+.env
+.env.*
+.m2/
+.vscode/
+out/
+body.json
+*.backup

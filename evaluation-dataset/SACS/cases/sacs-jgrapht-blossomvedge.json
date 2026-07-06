@@ -1,0 +1,25 @@
+{
+  "id": "sacs-jgrapht-blossomvedge",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/BlossomVEdge.java",
+      "status": "added",
+      "fileContentPath": "../files/BlossomVEdge.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/BlossomVEdge.java",
+      "line": 204,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "moveEdgeTail",
+      "severity": "Major",
+      "note": "moveEdgeTail manipulates BlossomVNode state closely enough that the behavior belongs with BlossomVNode."
+    }
+  ],
+  "evaluateRefactoring": false
+}

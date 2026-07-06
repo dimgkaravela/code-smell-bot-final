@@ -1,0 +1,37 @@
+{
+  "id": "softdevii-2024-txtinput",
+  "source": "SoftDevII-Project-2024-Backlog-derived",
+  "repository": "evaluation/softdevii-2024",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/input/TXTInput.java",
+      "status": "added",
+      "fileContentPath": "../files/TXTInput.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/input/TXTInput.java",
+      "line": 20,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "readFile",
+      "severity": "Major",
+      "note": "readFile() contains a long sequence of format checks and parsing branches even though the TXT input fields occur in a fixed, predetermined order.",
+      "suggestedRefactoring": "Substitute Algorithm",
+      "refactoringNote": "Replace the line-prefix dispatch algorithm with a simpler ordered parser, then extract the shared parsing workflow into Input."
+    },
+    {
+      "file": "src/input/TXTInput.java",
+      "line": 20,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "readFile",
+      "severity": "Major",
+      "note": "After simplification, TXTInput.readFile() and XMLInput.readFile() perform the same conceptual steps: read agent data, create the agent, read each receipt, and add each receipt.",
+      "suggestedRefactoring": "Form Template Method",
+      "refactoringNote": "Move the common parsing sequence to Input and leave TXT-specific value extraction in overridable steps."
+    }
+  ]
+}

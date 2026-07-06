@@ -1,0 +1,12 @@
+{
+  "id": "move-method-06",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Move Method",
+  "repository": "https://github.com/elastic/elasticsearch",
+  "commit": "c928852d4ab7d8c744063979208709ed4429b8e9",
+  "parentCommit": "4f4b1b74df829049f8092ff25059df18fec39513",
+  "commitUrl": "https://github.com/elastic/elasticsearch/commit/c928852d4ab7d8c744063979208709ed4429b8e9",
+  "beforeFile": "core/src/main/java/org/elasticsearch/index/query/ExistsQueryParser.java",
+  "afterFile": "core/src/main/java/org/elasticsearch/index/query/ExistsQueryParser.java",
+  "description": "Move Method public newFilter(parseContext QueryParseContext, fieldPattern String, queryName String) : Query from class org.elasticsearch.index.query.ExistsQueryParser to public newFilter(parseContext QueryParseContext, fieldPattern String, queryName String) : Query from class org.elasticsearch.index.query.ExistsQueryBuilder"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "sacs-jgrapht-contractionhierarchyprecomputationtest",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/ContractionHierarchyPrecomputationTest.java",
+      "status": "added",
+      "fileContentPath": "../files/ContractionHierarchyPrecomputationTest.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/ContractionHierarchyPrecomputationTest.java",
+      "line": 36,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "ContractionHierarchyPrecomputationTest",
+      "severity": "Major",
+      "note": "ContractionHierarchyPrecomputationTest collects many precomputation scenarios and assertions in one large test class."
+    }
+  ],
+  "evaluateRefactoring": false
+}

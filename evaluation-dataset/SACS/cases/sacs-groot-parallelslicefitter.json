@@ -1,0 +1,52 @@
+{
+  "id": "sacs-groot-parallelslicefitter",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/ParallelSliceFitter.java",
+      "status": "added",
+      "fileContentPath": "../files/ParallelSliceFitter.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/ParallelSliceFitter.java",
+      "line": 29,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "ParallelSliceFitter",
+      "severity": "Major",
+      "note": "ParallelSliceFitter combines histogram slicing, fitting configuration, parallel execution, result aggregation, and plotting support in one large class."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/ParallelSliceFitter.java",
+      "line": 313,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "getInspectFitsPane",
+      "severity": "Major",
+      "note": "getInspectFitsPane constructs the inspection UI, creates plots, and wires multiple tabs in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/ParallelSliceFitter.java",
+      "line": 372,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "fit",
+      "severity": "Major",
+      "note": "fit coordinates slice selection, task creation, executor management, result collection, and summary updates in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/ParallelSliceFitter.java",
+      "line": 434,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "main",
+      "severity": "Major",
+      "note": "main performs sample data setup, fitting configuration, execution, and visualization in one method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

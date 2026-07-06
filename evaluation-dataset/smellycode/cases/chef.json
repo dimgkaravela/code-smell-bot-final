@@ -1,0 +1,42 @@
+{
+  "id": "smellycode-chef",
+  "source": "SmellyCodeDataset-derived",
+  "repository": "evaluation/smellycode",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/main/java/example/Chef.java",
+      "status": "added",
+      "fileContentPath": "../files/Chef.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/example/Chef.java",
+      "line": 60,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "updateContactInfo",
+      "severity": "Major",
+      "note": "updateContactInfo takes five related contact fields that should be grouped into a parameter object."
+    },
+    {
+      "file": "src/main/java/example/Chef.java",
+      "line": 127,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "longMethod",
+      "severity": "Major",
+      "note": "longMethod performs preparation, delivery, cleaning, contact updates, notification, discount, complaint, receipt, and delegation behavior."
+    },
+    {
+      "file": "src/main/java/example/Chef.java",
+      "line": 154,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "duplicateMethod",
+      "severity": "Minor",
+      "note": "duplicateMethod repeats the same bakePizza(\"Cheese\") call inside one method."
+    }
+  ]
+}

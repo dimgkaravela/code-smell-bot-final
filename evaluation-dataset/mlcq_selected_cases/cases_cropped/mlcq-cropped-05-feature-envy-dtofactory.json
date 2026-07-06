@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-05-feature-envy-dtofactory",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/05_Feature_Envy_DtoFactory.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/05_Feature_Envy_DtoFactory.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/05_Feature_Envy_DtoFactory.java",
+                       "line":  36,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "createSystemDiagnosticsDto",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 12150 labels org.apache.nifi.web.api.dto.DtoFactory#createSystemDiagnosticsDto SystemDiagnostics as feature envy (function) at original lines 3110-3185; converted to Feature Envy. Cropped local source lines 3092-3227. Source: https://github.com/apache/nifi/blob/c8eff590efa3babcda0b755009224dcac168708b/nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-web/nifi-web-api/src/main/java/org/apache/nifi/web/api/dto/DtoFactory.java/#L3110-L3185"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

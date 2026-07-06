@@ -1,0 +1,12 @@
+{
+  "id": "move-attribute-03",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Move Attribute",
+  "repository": "https://github.com/glyptodon/guacamole-client",
+  "commit": "ce1f3d07976de31aed8f8189ec5e1a6453f4b580",
+  "parentCommit": "e8618199c7f3e20f859b4ee31bde22b9945f7216",
+  "commitUrl": "https://github.com/glyptodon/guacamole-client/commit/ce1f3d07976de31aed8f8189ec5e1a6453f4b580",
+  "beforeFile": "extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/src/main/java/org/glyptodon/guacamole/auth/jdbc/user/UserContextService.java",
+  "afterFile": "extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/src/main/java/org/glyptodon/guacamole/auth/jdbc/user/UserContextService.java",
+  "description": "Move Attribute private NEW_PASSWORD_PARAMETER : String from class org.glyptodon.guacamole.auth.jdbc.user.UserContextService to private NEW_PASSWORD_PARAMETER : String from class org.glyptodon.guacamole.auth.jdbc.user.UserService"
+}

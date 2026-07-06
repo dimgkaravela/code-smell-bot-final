@@ -1,0 +1,26 @@
+{
+  "id": "move-method-09",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/hierynomus/sshj",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "src/itest/java/nl/javadude/sshj/connection/channel/ChannelCloseEofTest.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-method-09.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/itest/java/nl/javadude/sshj/connection/channel/ChannelCloseEofTest.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "shouldCorrectlyHandleSessionChannelEof",
+      "note": "Move Method public shouldCorrectlyHandleSessionChannelEof() : void from class nl.javadude.sshj.connection.channel.ChannelCloseEofTest to public shouldCorrectlyHandleSessionChannelEof() : void from class com.hierynomus.sshj.connection.channel.ChannelCloseEofTest",
+      "suggestedRefactoring": "Move Method",
+      "refactoringNote": "Move Method public shouldCorrectlyHandleSessionChannelEof() : void from class nl.javadude.sshj.connection.channel.ChannelCloseEofTest to public shouldCorrectlyHandleSessionChannelEof() : void from class com.hierynomus.sshj.connection.channel.ChannelCloseEofTest"
+    }
+  ]
+}

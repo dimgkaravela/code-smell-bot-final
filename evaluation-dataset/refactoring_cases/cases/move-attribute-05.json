@@ -1,0 +1,26 @@
+{
+  "id": "move-attribute-05",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/undertow-io/undertow",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "core/src/main/java/io/undertow/UndertowLogger.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-attribute-05.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "core/src/main/java/io/undertow/UndertowLogger.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "NotNode",
+      "note": "Move Attribute private node : Node from class io.undertow.predicate.PredicateParser.NotNode to private node : Node from class io.undertow.server.handlers.builder.PredicatedHandlersParser.NotNode",
+      "suggestedRefactoring": "Move Attribute",
+      "refactoringNote": "Move Attribute private node : Node from class io.undertow.predicate.PredicateParser.NotNode to private node : Node from class io.undertow.server.handlers.builder.PredicatedHandlersParser.NotNode"
+    }
+  ]
+}

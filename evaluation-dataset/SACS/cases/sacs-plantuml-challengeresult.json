@@ -1,0 +1,25 @@
+{
+  "id": "sacs-plantuml-challengeresult",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/ChallengeResult.java",
+      "status": "added",
+      "fileContentPath": "../files/ChallengeResult.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/ChallengeResult.java",
+      "line": 66,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "findValuesByKey",
+      "severity": "Major",
+      "note": "findValuesByKey is labeled as Feature Envy toward Capture because it forwards key lookup behavior to the Capture object."
+    }
+  ],
+  "evaluateRefactoring": false
+}

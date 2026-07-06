@@ -1,0 +1,34 @@
+{
+  "id": "figshare-mc-elementimpl",
+  "source": "figshare-CodeSmellsDataset-MessageChains_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/ElementImpl.java",
+      "status": "added",
+      "fileContentPath": "../files/ElementImpl.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/ElementImpl.java",
+      "line": 677,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "removeAttributeNS",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels ElementImpl.removeAttributeNS as a positive Message Chains method."
+    },
+    {
+      "file": "evaluation-dataset/figshare/files/ElementImpl.java",
+      "line": 735,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "setAttributeNodeNS",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels ElementImpl.setAttributeNodeNS as a positive Message Chains method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

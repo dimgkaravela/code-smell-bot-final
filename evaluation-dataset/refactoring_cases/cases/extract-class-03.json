@@ -1,0 +1,26 @@
+{
+  "id": "extract-class-03",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/Graylog2/graylog2-server",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "integration-tests/src/test/java/integration/BaseRestTest.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-class-03.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "integration-tests/src/test/java/integration/BaseRestTest.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "BaseRestTest",
+      "note": "Extract Class integration.RestAssuredSetupRule from class integration.BaseRestTest",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Extract Class integration.RestAssuredSetupRule from class integration.BaseRestTest"
+    }
+  ]
+}

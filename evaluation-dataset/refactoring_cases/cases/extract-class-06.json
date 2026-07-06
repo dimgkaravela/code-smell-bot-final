@@ -1,0 +1,26 @@
+{
+  "id": "extract-class-06",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/SlimeKnights/TinkersConstruct",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "src/main/java/tconstruct/library/modifiers/Modifier.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-class-06.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/tconstruct/library/modifiers/Modifier.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "Modifier",
+      "note": "Extract Class tconstruct.library.mantle.RecipeMatchRegistry from class tconstruct.library.modifiers.Modifier",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Extract Class tconstruct.library.mantle.RecipeMatchRegistry from class tconstruct.library.modifiers.Modifier"
+    }
+  ]
+}

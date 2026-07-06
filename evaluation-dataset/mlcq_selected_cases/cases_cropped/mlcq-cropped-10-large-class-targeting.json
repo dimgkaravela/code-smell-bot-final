@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-10-large-class-targeting",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/10_Large_Class_Targeting.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/large_class/10_Large_Class_Targeting.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/10_Large_Class_Targeting.java",
+                       "line":  18,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "Targeting",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 5405 labels com.facebook.ads.sdk.Targeting as blob (class) at original lines 57-1555; converted to Large Class. Cropped local source lines 57-1567. Source: https://github.com/facebook/facebook-java-business-sdk/blob/561f1a75e1220b55a160a1b92b0187f72be9cd08/src/main/java/com/facebook/ads/sdk/Targeting.java/#L57-L1555"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

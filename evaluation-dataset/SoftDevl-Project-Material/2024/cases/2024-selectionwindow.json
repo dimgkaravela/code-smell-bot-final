@@ -1,0 +1,26 @@
+{
+  "id": "softdevii-2024-selectionwindow",
+  "source": "SoftDevII-Project-2024-Backlog-derived",
+  "repository": "evaluation/softdevii-2024",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/gui/SelectionWindow.java",
+      "status": "added",
+      "fileContentPath": "../files/SelectionWindow.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/gui/SelectionWindow.java",
+      "line": 476,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "appendFile",
+      "severity": "Major",
+      "note": "appendFile() repeatedly calls selectedAgent.getFileAppender().set...(), coupling the GUI to the path through Agent and FileAppender.",
+      "suggestedRefactoring": "Hide Delegate",
+      "refactoringNote": "Create and pass a Receipt object to a single Agent or FileAppender operation instead of repeatedly navigating through selectedAgent.getFileAppender()."
+    }
+  ]
+}

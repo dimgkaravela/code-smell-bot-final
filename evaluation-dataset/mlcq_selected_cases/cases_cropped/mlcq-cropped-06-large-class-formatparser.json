@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-06-large-class-formatparser",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/06_Large_Class_FormatParser.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/large_class/06_Large_Class_FormatParser.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/06_Large_Class_FormatParser.java",
+                       "line":  18,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "FormatParser",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 1096 labels sage.media.format.FormatParser as blob (class) at original lines 22-1683; converted to Large Class. Cropped local source lines 22-1695. Source: https://github.com/google/sagetv/blob/a35e3a450b4c0134cb097b9e7de76dca08eb6654/java/sage/media/format/FormatParser.java/#L22-L1683"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-04-feature-envy-synchronousmessagestorerecoverer",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/04_Feature_Envy_SynchronousMessageStoreRecoverer.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/04_Feature_Envy_SynchronousMessageStoreRecoverer.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/04_Feature_Envy_SynchronousMessageStoreRecoverer.java",
+                       "line":  37,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "recover",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 4277 labels org.apache.qpid.server.virtualhost.SynchronousMessageStoreRecoverer#recover QueueManagingVirtualHost\u003c?\u003e as feature envy (function) at original lines 63-151; converted to Feature Envy. Cropped local source lines 45-193. Source: https://github.com/apache/qpid-broker-j/blob/4c4400b98a5a8493cfb9e5dbb21c97175f433a62/broker-core/src/main/java/org/apache/qpid/server/virtualhost/SynchronousMessageStoreRecoverer.java/#L63-L151"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-2-2-1-rcdata",
+  "source": "figshare-CodeSmellsDataset-LongParameterList_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/2.2.1/RCData.java",
+      "status": "added",
+      "fileContentPath": "../files/2.2.1/RCData.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/2.2.1/RCData.java",
+      "line": 272,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "RCData",
+      "severity": "Major",
+      "note": "LongParameterList_positive.csv labels the nine-parameter RCData constructor as a positive Long Parameter List method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

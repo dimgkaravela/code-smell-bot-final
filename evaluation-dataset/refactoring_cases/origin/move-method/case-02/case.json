@@ -1,0 +1,12 @@
+{
+  "id": "move-method-02",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Move Method",
+  "repository": "https://github.com/SonarSource/sonarqube",
+  "commit": "c55a8c3761e9aae9f375d312c14b1bbb9ee9c0fa",
+  "parentCommit": "837229ce52e7f835ff0e1a6f1493edc189bef19b",
+  "commitUrl": "https://github.com/SonarSource/sonarqube/commit/c55a8c3761e9aae9f375d312c14b1bbb9ee9c0fa",
+  "beforeFile": "server/sonar-server/src/main/java/org/sonar/server/computation/step/PersistComponentsStep.java",
+  "afterFile": "server/sonar-server/src/main/java/org/sonar/server/computation/step/PersistComponentsStep.java",
+  "description": "Move Method private createComponentDto(reportComponent BatchReport.Component, component Component) : ComponentDto from class org.sonar.server.computation.step.PersistComponentsStep to private createComponentDto(reportComponent BatchReport.Component, component Component) : ComponentDto from class org.sonar.server.computation.step.PersistComponentsStep.PersisComponent"
+}

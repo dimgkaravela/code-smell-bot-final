@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-02-long-method-subquerynode",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/02_Long_Method_SubqueryNode.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/long_method/02_Long_Method_SubqueryNode.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/long_method/02_Long_Method_SubqueryNode.java",
+                       "line":  37,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "preprocess",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 10095 labels org.apache.derby.impl.sql.compile.SubqueryNode#preprocess int|FromList|SubqueryList|PredicateList as long method (function) at original lines 606-926; converted to Long Method. Cropped local source lines 588-968. Source: https://github.com/apache/derby/blob/bd246fc89d4fce3f82f8344074ecb8a4713418df/java/org.apache.derby.engine/org/apache/derby/impl/sql/compile/SubqueryNode.java/#L606-L926"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

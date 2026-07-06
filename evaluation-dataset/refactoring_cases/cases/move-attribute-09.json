@@ -1,0 +1,26 @@
+{
+  "id": "move-attribute-09",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/graphhopper/graphhopper",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "core/src/main/java/com/graphhopper/storage/GraphHopperStorage.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-attribute-09.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "core/src/main/java/com/graphhopper/storage/GraphHopperStorage.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "GraphHopperStorage",
+      "note": "Move Attribute protected edgeCount : int from class com.graphhopper.storage.GraphHopperStorage to protected edgeCount : int from class com.graphhopper.storage.BaseGraph",
+      "suggestedRefactoring": "Move Attribute",
+      "refactoringNote": "Move Attribute protected edgeCount : int from class com.graphhopper.storage.GraphHopperStorage to protected edgeCount : int from class com.graphhopper.storage.BaseGraph"
+    }
+  ]
+}

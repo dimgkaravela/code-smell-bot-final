@@ -1,0 +1,52 @@
+{
+  "id": "sacs-plantuml-xlabels-c",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/xlabels__c.java",
+      "status": "added",
+      "fileContentPath": "../files/xlabels__c.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/xlabels__c.java",
+      "line": 81,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "xlabels__c",
+      "severity": "Major",
+      "note": "xlabels__c is labeled as a Large Class because it contains a broad amount of translated layout and label-handling logic."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/xlabels__c.java",
+      "line": 527,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "xlintersections_",
+      "severity": "Major",
+      "note": "xlintersections_ is a positive SACS Long Method row for the xlabels__c133 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/xlabels__c.java",
+      "line": 527,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "xlintersections_",
+      "severity": "Major",
+      "note": "xlintersections_ is a positive SACS Long Method row for the xlabels__c134 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/xlabels__c.java",
+      "line": 527,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "xlintersections_",
+      "severity": "Major",
+      "note": "xlintersections_ is a positive SACS Long Method row for the xlabels__c135 auto entry."
+    }
+  ],
+  "evaluateRefactoring": false
+}

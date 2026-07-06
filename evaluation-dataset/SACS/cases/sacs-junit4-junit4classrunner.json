@@ -1,0 +1,25 @@
+{
+  "id": "sacs-junit4-junit4classrunner",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/JUnit4ClassRunner.java",
+      "status": "added",
+      "fileContentPath": "../files/JUnit4ClassRunner.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/JUnit4ClassRunner.java",
+      "line": 101,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "testAborted",
+      "severity": "Major",
+      "note": "testAborted is labeled as Feature Envy toward Description because failure reporting is centered on the Description instance."
+    }
+  ],
+  "evaluateRefactoring": false
+}

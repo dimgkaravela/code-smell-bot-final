@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-01-large-class-druiddatasource",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/01_Large_Class_DruidDataSource.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/large_class/01_Large_Class_DruidDataSource.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/01_Large_Class_DruidDataSource.java",
+                       "line":  18,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "DruidDataSource",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 11616 labels com.alibaba.druid.pool.DruidDataSource as blob (class) at original lines 109-3626; converted to Large Class. Cropped local source lines 109-3638. Source: https://github.com/alibaba/druid/blob/768469fe4d1340efe1036453366a58c9ab7e30d1/src/main/java/com/alibaba/druid/pool/DruidDataSource.java/#L109-L3626"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

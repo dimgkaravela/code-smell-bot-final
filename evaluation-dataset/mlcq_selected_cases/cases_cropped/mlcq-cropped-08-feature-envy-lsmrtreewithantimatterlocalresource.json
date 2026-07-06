@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-08-feature-envy-lsmrtreewithantimatterlocalresource",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/08_Feature_Envy_LSMRTreeWithAntiMatterLocalResource.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/08_Feature_Envy_LSMRTreeWithAntiMatterLocalResource.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/08_Feature_Envy_LSMRTreeWithAntiMatterLocalResource.java",
+                       "line":  37,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "createInstance",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 15311 labels org.apache.hyracks.storage.am.lsm.rtree.dataflow.LSMRTreeWithAntiMatterLocalResource#createInstance INCServiceContext as feature envy (function) at original lines 96-109; converted to Feature Envy. Cropped local source lines 78-151. Source: https://github.com/apache/asterixdb/blob/223d13a06c4a4a58408aeac19674ac1f36f5ff35/hyracks-fullstack/hyracks/hyracks-storage-am-lsm-rtree/src/main/java/org/apache/hyracks/storage/am/lsm/rtree/dataflow/LSMRTreeWithAntiMatterLocalResource.java/#L96-L109"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

@@ -1,0 +1,70 @@
+{
+  "id": "sacs-jsprit-statemanager",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/StateManager.java",
+      "status": "added",
+      "fileContentPath": "../files/StateManager.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/StateManager.java",
+      "line": 611,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "ruinStarts",
+      "severity": "Major",
+      "note": "ruinStarts is labeled as Feature Envy toward RuinListeners because it only forwards ruin lifecycle work to that collaborator."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/StateManager.java",
+      "line": 616,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "ruinEnds",
+      "severity": "Major",
+      "note": "ruinEnds is labeled as Feature Envy toward RuinListeners because it delegates ruin completion behavior to that collaborator."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/StateManager.java",
+      "line": 622,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "removed",
+      "severity": "Major",
+      "note": "removed is labeled as Feature Envy toward RuinListeners because it forwards removal events directly to that collaborator."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/StateManager.java",
+      "line": 48,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "StateManager",
+      "severity": "Major",
+      "note": "StateManager combines route state, activity state, lifecycle listener wiring, insertion events, and ruin events in one large class."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/StateManager.java",
+      "line": 332,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "getRouteState",
+      "severity": "Major",
+      "note": "getRouteState(VehicleRoute, StateId, Class) mixes indexed storage lookup, map lookup, type casting, and exception conversion in one method."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/StateManager.java",
+      "line": 382,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "getRouteState",
+      "severity": "Major",
+      "note": "getRouteState(VehicleRoute, Vehicle, StateId, Class) combines vehicle-dependent key lookup, indexed storage lookup, map lookup, type casting, and exception conversion."
+    }
+  ],
+  "evaluateRefactoring": false
+}

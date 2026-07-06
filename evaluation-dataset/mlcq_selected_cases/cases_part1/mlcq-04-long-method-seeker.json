@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-04-long-method-seeker",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/long_method/04_Long_Method_Seeker.java",
+                      "status":  "added",
+                      "fileContentPath":  "../long_method/04_Long_Method_Seeker.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/long_method/04_Long_Method_Seeker.java",
+                       "line":  5495,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "addManualRecord",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 9955 labels sage.Seeker#addManualRecord Airing|UIClient as long method (function) at original lines 5483-5646; converted to Long Method. Source: https://github.com/google/sagetv/blob/a35e3a450b4c0134cb097b9e7de76dca08eb6654/java/sage/Seeker.java/#L5483-L5646"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

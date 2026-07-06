@@ -1,0 +1,25 @@
+{
+  "id": "sacs-rxjava-abstractobservablewithupstream",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/AbstractObservableWithUpstream.java",
+      "status": "added",
+      "fileContentPath": "../files/AbstractObservableWithUpstream.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/AbstractObservableWithUpstream.java",
+      "line": 0,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "source",
+      "severity": "Major",
+      "note": "The positive SACS label is subscribeActual -> ObservableWithLatestFromMany, but subscribeActual is not present in the local AbstractObservableWithUpstream.java source."
+    }
+  ],
+  "evaluateRefactoring": false
+}

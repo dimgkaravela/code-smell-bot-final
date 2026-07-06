@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-2-3-0-abstractxmldocumentparser",
+  "source": "figshare-CodeSmellsDataset-LongParameterList_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/2.3.0/AbstractXMLDocumentParser.java",
+      "status": "added",
+      "fileContentPath": "../files/2.3.0/AbstractXMLDocumentParser.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/2.3.0/AbstractXMLDocumentParser.java",
+      "line": 550,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "attributeDecl",
+      "severity": "Major",
+      "note": "LongParameterList_positive.csv labels AbstractXMLDocumentParser.attributeDecl as a positive Long Parameter List method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

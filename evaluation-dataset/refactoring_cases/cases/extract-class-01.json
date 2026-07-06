@@ -1,0 +1,26 @@
+{
+  "id": "extract-class-01",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/robovm/robovm",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "cocoatouch/src/main/java/org/robovm/apple/corebluetooth/CBAdvertisementData.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-class-01.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "cocoatouch/src/main/java/org/robovm/apple/corebluetooth/CBAdvertisementData.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "CBAdvertisementData",
+      "note": "Extract Class org.robovm.apple.corebluetooth.CBAdvertisementData.Keys from class org.robovm.apple.corebluetooth.CBAdvertisementData",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Extract Class org.robovm.apple.corebluetooth.CBAdvertisementData.Keys from class org.robovm.apple.corebluetooth.CBAdvertisementData"
+    }
+  ]
+}

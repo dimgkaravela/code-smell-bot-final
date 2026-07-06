@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-2-2-8-result",
+  "source": "figshare-CodeSmellsDataset-LongParameterList_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/2.2.8/Result.java",
+      "status": "added",
+      "fileContentPath": "../files/2.2.8/Result.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/2.2.8/Result.java",
+      "line": 874,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "setPrepareOrExecuteProperties",
+      "severity": "Major",
+      "note": "LongParameterList_positive.csv labels Result.setPrepareOrExecuteProperties as a positive Long Parameter List method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

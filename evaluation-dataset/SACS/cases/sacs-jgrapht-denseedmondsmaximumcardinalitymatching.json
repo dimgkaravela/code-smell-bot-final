@@ -1,0 +1,25 @@
+{
+  "id": "sacs-jgrapht-denseedmondsmaximumcardinalitymatching",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/DenseEdmondsMaximumCardinalityMatching.java",
+      "status": "added",
+      "fileContentPath": "../files/DenseEdmondsMaximumCardinalityMatching.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/DenseEdmondsMaximumCardinalityMatching.java",
+      "line": 92,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "DenseEdmondsMaximumCardinalityMatching",
+      "severity": "Major",
+      "note": "DenseEdmondsMaximumCardinalityMatching combines dense graph matching state, blossom handling, and algorithm orchestration in one class."
+    }
+  ],
+  "evaluateRefactoring": false
+}

@@ -1,0 +1,93 @@
+name: Rerun LLM Smell Report (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to analyze"
+        required: true
+        type: number
+      provider:
+        description: "LLM provider (gemini or openai)"
+        required: false
+        default: "gemini"
+      model:
+        description: "LLM model name"
+        required: false
+        default: "gemini-3.1-flash-lite"
+      max_files:
+        description: "Max changed files to analyze (0 means no limit)"
+        required: false
+        default: "0"
+      post_comment:
+        description: "Post the generated comment back to the PR"
+        required: false
+        type: boolean
+        default: false
+      debug_smells:
+        description: "Print the prompt, raw LLM output, and parsed findings"
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: 'maven'
+
+      - name: Build jar
+        run: mvn -q -DskipTests package
+
+      - name: Run bot on provided PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+          REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          POST_COMMENT: ${{ inputs.post_comment }}
+          MAX_FILES: ${{ inputs.max_files }}
+          FETCH_CONTENTS: "true"
+          FETCH_RELATED_FILES: "true"
+          LLM_PROVIDER: ${{ inputs.provider }}
+          GEMINI_MODEL: ${{ inputs.model }}
+          OPENAI_MODEL: ${{ inputs.model }}
+          DEBUG_SMELLS: ${{ inputs.debug_smells }}
+          LLM_MAX_FILES_PER_CHUNK: "4"
+          LLM_MAX_PATCH_CHARS: "18000"
+          MAX_FILE_CONTENT_CHARS: "12000"
+          MAX_RELATED_FILES_PER_FILE: "2"
+          MAX_RELATED_FILE_CHARS: "4000"
+
+          # keys (enable only the provider you use)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set -e
+
+          echo "Contents of target directory:"
+          ls -lah target
+
+          # Pick the first jar produced by Maven (your project creates a normal JAR, not *-shaded.jar)
+          JAR="$(ls -1 target/*.jar | head -n1)"
+
+          echo "Running JAR: $JAR"
+          java -jar "$JAR"
+
+      - name: Upload bot output artifact (for debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-smell-bot-out
+          path: out/
+          if-no-files-found: warn

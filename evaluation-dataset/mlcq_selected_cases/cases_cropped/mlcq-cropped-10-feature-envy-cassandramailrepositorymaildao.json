@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-10-feature-envy-cassandramailrepositorymaildao",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/10_Feature_Envy_CassandraMailRepositoryMailDAO.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/10_Feature_Envy_CassandraMailRepositoryMailDAO.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/10_Feature_Envy_CassandraMailRepositoryMailDAO.java",
+                       "line":  8,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "toByteBuffer",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 10590 labels org.apache.james.mailrepository.cassandra.CassandraMailRepositoryMailDAO#toByteBuffer Serializable as feature envy (function) at original lines 257-265; converted to Feature Envy. Cropped local source lines 239-298. Source: https://github.com/apache/james-project/blob/fa24a096a5853459c3769a34ccc68feb91626bfa/server/mailrepository/mailrepository-cassandra/src/main/java/org/apache/james/mailrepository/cassandra/CassandraMailRepositoryMailDAO.java/#L257-L265"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

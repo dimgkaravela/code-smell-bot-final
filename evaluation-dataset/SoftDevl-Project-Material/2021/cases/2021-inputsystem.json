@@ -1,0 +1,37 @@
+{
+  "id": "softdevii-2021-inputsystem",
+  "source": "SoftDevII-Project-2021-Backlog-derived",
+  "repository": "evaluation/softdevii-2021",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/inputManagePackage/InputSystem.java",
+      "status": "added",
+      "fileContentPath": "../files/InputSystem.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/inputManagePackage/InputSystem.java",
+      "line": 10,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "InputSystem",
+      "severity": "Major",
+      "note": "InputSystem has multiple responsibilities because it selects input formats, opens files, parses taxpayer data, parses receipt data, creates domain objects, and updates the database.",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Split TXT and XML parsing into separate parser classes. Use a common abstraction or Template Method for the shared parsing workflow, and parameterize format-specific tags to reduce duplication."
+    },
+    {
+      "file": "src/inputManagePackage/InputSystem.java",
+      "line": 24,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "loadTaxpayerDataFromTxtFileIntoDatabase",
+      "severity": "Major",
+      "note": "The TXT and XML loading methods repeat the same file-opening, taxpayer construction, receipt-reading, receipt-construction, and database-update workflow with only format-specific tags differing.",
+      "suggestedRefactoring": "Form Template Method",
+      "refactoringNote": "Extract the common loading algorithm into a shared parser workflow and isolate or parameterize the TXT/XML-specific delimiters and tag extraction."
+    }
+  ]
+}

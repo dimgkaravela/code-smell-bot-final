@@ -1,0 +1,37 @@
+{
+  "id": "softdevii-2022-mainwindow",
+  "source": "SoftDevII-Project-2022-Backlog-derived",
+  "repository": "evaluation/softdevii-2022",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/view/MainWindow.java",
+      "status": "added",
+      "fileContentPath": "../files/MainWindow.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/view/MainWindow.java",
+      "line": 27,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "editContents",
+      "severity": "Major",
+      "note": "editContents() handles all supported LaTeX element types through a long conditional and performs content insertion, command execution, and editor updates.",
+      "suggestedRefactoring": "Move Method",
+      "refactoringNote": "Move the document-editing responsibility from the GUI class to AddLatexCommand, leaving MainWindow responsible only for gathering user input and updating the view."
+    },
+    {
+      "file": "src/view/MainWindow.java",
+      "line": 27,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "editContents",
+      "severity": "Major",
+      "note": "editContents() repeatedly combines the text before the caret, a type-specific LaTeX fragment, and the text after the caret in each conditional branch.",
+      "suggestedRefactoring": "Extract Method",
+      "refactoringNote": "Extract the common insertion workflow and isolate the mapping from element type to LaTeX fragment; then move the resulting application logic to AddLatexCommand."
+    }
+  ]
+}

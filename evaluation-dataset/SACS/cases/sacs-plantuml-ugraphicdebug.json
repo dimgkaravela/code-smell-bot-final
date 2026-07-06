@@ -1,0 +1,97 @@
+{
+  "id": "sacs-plantuml-ugraphicdebug",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "status": "added",
+      "fileContentPath": "../files/UGraphicDebug.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 73,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "UGraphicDebug",
+      "severity": "Major",
+      "note": "UGraphicDebug combines drawing state, clipping, string serialization, and debug output formatting in one large class."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug295 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug296 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug297 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug298 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug299 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug300 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug301 auto entry."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/UGraphicDebug.java",
+      "line": 116,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is a positive SACS Long Method row for the UGraphicDebug302 auto entry."
+    }
+  ],
+  "evaluateRefactoring": false
+}

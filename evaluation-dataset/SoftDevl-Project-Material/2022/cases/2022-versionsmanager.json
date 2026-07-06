@@ -1,0 +1,26 @@
+{
+  "id": "softdevii-2022-versionsmanager",
+  "source": "SoftDevII-Project-2022-Backlog-derived",
+  "repository": "evaluation/softdevii-2022",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/model/VersionsManager.java",
+      "status": "added",
+      "fileContentPath": "../files/VersionsManager.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/model/VersionsManager.java",
+      "line": 10,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "VersionsManager",
+      "severity": "Major",
+      "note": "VersionsManager combines version-strategy management with document state updates and file-related operations delegated through LatexEditorView.",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Keep version-history and strategy responsibilities in VersionsManager, and move file loading, file saving, and unrelated document operations to the appropriate command or service classes."
+    }
+  ]
+}

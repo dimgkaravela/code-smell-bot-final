@@ -1,0 +1,34 @@
+{
+  "id": "figshare-mc-available",
+  "source": "figshare-CodeSmellsDataset-MessageChains_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/Available.java",
+      "status": "added",
+      "fileContentPath": "../files/Available.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/Available.java",
+      "line": 207,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "checkResource",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels Available.checkResource as a positive Message Chains method."
+    },
+    {
+      "file": "evaluation-dataset/figshare/files/Available.java",
+      "line": 221,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "checkClass",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels Available.checkClass as a positive Message Chains method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

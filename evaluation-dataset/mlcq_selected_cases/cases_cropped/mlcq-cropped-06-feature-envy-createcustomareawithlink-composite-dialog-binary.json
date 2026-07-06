@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-06-feature-envy-createcustomareawithlink-composite-dialog-binary",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/06_Feature_Envy_createCustomAreaWithLink_Composite_Dialog_Binary.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/06_Feature_Envy_createCustomAreaWithLink_Composite_Dialog_Binary.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/06_Feature_Envy_createCustomAreaWithLink_Composite_Dialog_Binary.java",
+                       "line":  21,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "createCustomAreaWithLink",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 10310 labels org.eclipse.n4js.ui.binaries.IllegalBinaryStateDialog.createCustomAreaWithLink Composite|Dialog|Binary as feature envy (function) at original lines 97-160; converted to Feature Envy. Cropped local source lines 79-174. Source: https://github.com/eclipse/n4js/blob/f715912fce0352ab574ff878086f77d17a78c908/plugins/org.eclipse.n4js.ui/src/org/eclipse/n4js/ui/binaries/IllegalBinaryStateDialog.java/#L97-L160"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-10-large-class-targeting",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/large_class/10_Large_Class_Targeting.java",
+                      "status":  "added",
+                      "fileContentPath":  "../large_class/10_Large_Class_Targeting.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/large_class/10_Large_Class_Targeting.java",
+                       "line":  69,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "Targeting",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 5405 labels com.facebook.ads.sdk.Targeting as blob (class) at original lines 57-1555; converted to Large Class. Source: https://github.com/facebook/facebook-java-business-sdk/blob/561f1a75e1220b55a160a1b92b0187f72be9cd08/src/main/java/com/facebook/ads/sdk/Targeting.java/#L57-L1555"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

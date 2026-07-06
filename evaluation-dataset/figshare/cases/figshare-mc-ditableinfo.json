@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-ditableinfo",
+  "source": "figshare-CodeSmellsDataset-MessageChains_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/DITableInfo.java",
+      "status": "added",
+      "fileContentPath": "../files/DITableInfo.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/DITableInfo.java",
+      "line": 512,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "getColSqlDataType",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels DITableInfo.getColSqlDataType as a positive Message Chains method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

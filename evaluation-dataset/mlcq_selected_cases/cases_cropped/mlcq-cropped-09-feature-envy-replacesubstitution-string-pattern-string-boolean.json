@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-09-feature-envy-replacesubstitution-string-pattern-string-boolean",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/09_Feature_Envy_replaceSubstitution_String_Pattern_String_boolean.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/09_Feature_Envy_replaceSubstitution_String_Pattern_String_boolean.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/09_Feature_Envy_replaceSubstitution_String_Pattern_String_boolean.java",
+                       "line":  36,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "replaceSubstitution",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 641 labels org.apache.zookeeper.server.auth.KerberosName.Rule.replaceSubstitution String|Pattern|String|boolean as feature envy (function) at original lines 287-295; converted to Feature Envy. Cropped local source lines 269-337. Source: https://github.com/apache/zookeeper/blob/07c3aaf3d723fb3144c0aedc0c2b655325df70e9/zookeeper-server/src/main/java/org/apache/zookeeper/server/auth/KerberosName.java/#L287-L295"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

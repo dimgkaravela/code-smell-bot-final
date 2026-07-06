@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-05-large-class-pipelineoptionsfactory",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/05_Large_Class_PipelineOptionsFactory.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/large_class/05_Large_Class_PipelineOptionsFactory.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/05_Large_Class_PipelineOptionsFactory.java",
+                       "line":  18,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "PipelineOptionsFactory",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 6893 labels org.apache.beam.sdk.options.PipelineOptionsFactory as blob (class) at original lines 115-1931; converted to Large Class. Cropped local source lines 115-1943. Source: https://github.com/apache/beam/blob/a956ff77a8448e5f2c12f6695fec608348b5ab60/sdks/java/core/src/main/java/org/apache/beam/sdk/options/PipelineOptionsFactory.java/#L115-L1931"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

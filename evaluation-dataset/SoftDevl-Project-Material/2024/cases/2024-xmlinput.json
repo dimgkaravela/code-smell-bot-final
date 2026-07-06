@@ -1,0 +1,26 @@
+{
+  "id": "softdevii-2024-xmlinput",
+  "source": "SoftDevII-Project-2024-Backlog-derived",
+  "repository": "evaluation/softdevii-2024",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/input/XMLInput.java",
+      "status": "added",
+      "fileContentPath": "../files/XMLInput.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/input/XMLInput.java",
+      "line": 19,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "readFile",
+      "severity": "Major",
+      "note": "XMLInput.readFile() and the simplified TXTInput.readFile() perform the same conceptual parsing workflow while differing only in format-specific value extraction.",
+      "suggestedRefactoring": "Form Template Method",
+      "refactoringNote": "Move the common parsing sequence to Input and leave XML-specific element extraction in overridable steps."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "folder": "large_class",
+    "code_name": "org.eclipse.linuxtools.internal.systemtap.ui.ide.editors.stp.STPIndenter",
+    "error": "Could not fetch https://raw.githubusercontent.com/eclipse/linuxtools/11865e6e7d86a9d2e63c7b25605f6055875e63ad/systemtap/org.eclipse.linuxtools.systemtap.ui.ide/src/org/eclipse/linuxtools/internal/systemtap/ui/ide/editors/stp/STPIndenter.java: HTTP Error 404: Not Found"
+  },
+  {
+    "folder": "large_class",
+    "code_name": "org.eclipse.jface.fieldassist.ContentProposalAdapter",
+    "error": "Could not fetch https://raw.githubusercontent.com/eclipse/eclipse.platform.ui/e3bbb556534a1fb945e1036948325d14a8dd9c7a/bundles/org.eclipse.jface/src/org/eclipse/jface/fieldassist/ContentProposalAdapter.java: HTTP Error 404: Not Found"
+  },
+  {
+    "folder": "long_method",
+    "code_name": "org.eclipse.jgit.internal.storage.pack.PackWriter#findObjectsToPack ProgressMonitor|ObjectWalk|Set<? extends ObjectId>|Set<? extends ObjectId>|Set<? extends ObjectId>",
+    "error": "Could not fetch https://raw.githubusercontent.com/eclipse/jgit/00523f38a19b073990239b0f837efa14197764c7/org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/pack/PackWriter.java: HTTP Error 404: Not Found"
+  }
+]

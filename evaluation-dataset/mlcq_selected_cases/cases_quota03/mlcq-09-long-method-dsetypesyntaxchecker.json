@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-09-long-method-dsetypesyntaxchecker",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/long_method/09_Long_Method_DseTypeSyntaxChecker.java",
+                      "status":  "added",
+                      "fileContentPath":  "../long_method/09_Long_Method_DseTypeSyntaxChecker.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/long_method/09_Long_Method_DseTypeSyntaxChecker.java",
+                       "line":  146,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "isValidSyntax",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 12750 labels org.apache.directory.api.ldap.model.schema.syntaxCheckers.DseTypeSyntaxChecker#isValidSyntax Object as long method (function) at original lines 133-273; converted to Long Method. Source: https://github.com/apache/directory-ldap-api/blob/5b93e102556ad2191b5d30411708410d1b1a9d71/ldap/model/src/main/java/org/apache/directory/api/ldap/model/schema/syntaxCheckers/DseTypeSyntaxChecker.java/#L133-L273"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

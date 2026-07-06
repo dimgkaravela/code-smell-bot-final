@@ -1,0 +1,37 @@
+{
+  "id": "softdevii-2021-taxpayer",
+  "source": "SoftDevII-Project-2021-Backlog-derived",
+  "repository": "evaluation/softdevii-2021",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/dataManagePackage/Taxpayer.java",
+      "status": "added",
+      "fileContentPath": "../files/Taxpayer.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/dataManagePackage/Taxpayer.java",
+      "line": 49,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "calculateTaxForMarriedFilingJointlyTaxpayerFamilyStatus",
+      "severity": "Major",
+      "note": "The four calculateTax* methods implement the same tax-bracket algorithm and differ primarily in income limits, base amounts, and tax rates.",
+      "suggestedRefactoring": "Parameterize Method",
+      "refactoringNote": "Replace the four methods with one parameterized tax-calculation method that receives the income limits, base amounts, and tax rates for the selected family status."
+    },
+    {
+      "file": "src/dataManagePackage/Taxpayer.java",
+      "line": 166,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "getBasicReceiptsTotalAmount",
+      "severity": "Major",
+      "note": "The get*ReceiptsTotalAmount methods repeat the same loop, receipt-kind comparison, accumulation, and rounding logic for each receipt category.",
+      "suggestedRefactoring": "Parameterize Method",
+      "refactoringNote": "Create one receipt-total method that accepts the receipt kind and reuse it for Basic, Entertainment, Travel, Health, and Other totals."
+    }
+  ]
+}

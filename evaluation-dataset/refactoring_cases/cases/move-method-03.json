@@ -1,0 +1,26 @@
+{
+  "id": "move-method-03",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/apache/cassandra",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "src/java/org/apache/cassandra/hadoop/cql3/CqlInputFormat.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-method-03.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/java/org/apache/cassandra/hadoop/cql3/CqlInputFormat.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "describeSplits",
+      "note": "Move Method private describeSplits(keyspace String, table String, tokenRange TokenRange, splitSize int) : Map<TokenRange,Long> from class org.apache.cassandra.hadoop.AbstractColumnFamilyInputFormat to private describeSplits(keyspace String, table String, tokenRange TokenRange, splitSize int) : Map<TokenRange,Long> from class org.apache.cassandra.hadoop.cql3.CqlInputFormat",
+      "suggestedRefactoring": "Move Method",
+      "refactoringNote": "Move Method private describeSplits(keyspace String, table String, tokenRange TokenRange, splitSize int) : Map<TokenRange,Long> from class org.apache.cassandra.hadoop.AbstractColumnFamilyInputFormat to private describeSplits(keyspace String, table String, tokenRange TokenRange, splitSize int) : Map<TokenRange,Long> from class org.apache.cassandra.hadoop.cql3.CqlInputFormat"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "extract-method-08",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/Athou/commafeed",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "src/main/java/com/commafeed/backend/favicon/DefaultFaviconFetcher.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-method-08.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/com/commafeed/backend/favicon/DefaultFaviconFetcher.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "fetch",
+      "note": "Extract Method private fetch(url String) : byte[] extracted from public fetch(feed Feed) : byte[] in class com.commafeed.backend.favicon.DefaultFaviconFetcher",
+      "suggestedRefactoring": "Extract Method",
+      "refactoringNote": "Extract Method private fetch(url String) : byte[] extracted from public fetch(feed Feed) : byte[] in class com.commafeed.backend.favicon.DefaultFaviconFetcher"
+    }
+  ]
+}

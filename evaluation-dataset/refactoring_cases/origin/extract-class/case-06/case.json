@@ -1,0 +1,12 @@
+{
+  "id": "extract-class-06",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Class",
+  "repository": "https://github.com/SlimeKnights/TinkersConstruct",
+  "commit": "71820e573134be3fad3935035249cd77c4412f4e",
+  "parentCommit": "1f1ff0814119ded2b9aa45fd7b874220b8bb2728",
+  "commitUrl": "https://github.com/SlimeKnights/TinkersConstruct/commit/71820e573134be3fad3935035249cd77c4412f4e",
+  "beforeFile": "src/main/java/tconstruct/library/modifiers/Modifier.java",
+  "afterFile": "src/main/java/tconstruct/library/modifiers/Modifier.java",
+  "description": "Extract Class tconstruct.library.mantle.RecipeMatchRegistry from class tconstruct.library.modifiers.Modifier"
+}

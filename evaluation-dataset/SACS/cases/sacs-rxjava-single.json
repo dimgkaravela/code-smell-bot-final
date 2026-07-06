@@ -1,0 +1,25 @@
+{
+  "id": "sacs-rxjava-single",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/Single.java",
+      "status": "added",
+      "fileContentPath": "../files/Single.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/Single.java",
+      "line": 116,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "Single",
+      "severity": "Major",
+      "note": "Single contains a very large API surface for creation, transformation, error handling, scheduling, blocking, and subscription operations."
+    }
+  ],
+  "evaluateRefactoring": false
+}

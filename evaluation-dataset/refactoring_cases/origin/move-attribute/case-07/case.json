@@ -1,0 +1,12 @@
+{
+  "id": "move-attribute-07",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Move Attribute",
+  "repository": "https://github.com/processing/processing",
+  "commit": "d7f781da42e54824c17875a6036d3448672637f5",
+  "parentCommit": "f3b72c709cc1db96edf06176cd39eee2c233127b",
+  "commitUrl": "https://github.com/processing/processing/commit/d7f781da42e54824c17875a6036d3448672637f5",
+  "beforeFile": "core/src/processing/core/PConstants.java",
+  "afterFile": "core/src/processing/core/PConstants.java",
+  "description": "Move Attribute public ERROR_PUSHMATRIX_OVERFLOW : String from class processing.core.PConstants to protected ERROR_PUSHMATRIX_OVERFLOW : String from class processing.core.PGraphics"
+}

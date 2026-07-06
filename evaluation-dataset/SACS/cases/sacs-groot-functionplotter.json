@@ -1,0 +1,43 @@
+{
+  "id": "sacs-groot-functionplotter",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/FunctionPlotter.java",
+      "status": "added",
+      "fileContentPath": "../files/FunctionPlotter.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/FunctionPlotter.java",
+      "line": 56,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw is labeled as Feature Envy toward GraphicsAxisFrame because it repeatedly asks the frame to translate function data into axis coordinates."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/FunctionPlotter.java",
+      "line": 96,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "getDataRegion",
+      "severity": "Major",
+      "note": "getDataRegion is labeled as Feature Envy toward Dimension3D because it mainly mutates and returns the Dimension3D region object."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/FunctionPlotter.java",
+      "line": 56,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "draw",
+      "severity": "Major",
+      "note": "draw handles data traversal, coordinate conversion, path construction, and rendering in one method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

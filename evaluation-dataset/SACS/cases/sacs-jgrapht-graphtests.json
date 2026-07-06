@@ -1,0 +1,34 @@
+{
+  "id": "sacs-jgrapht-graphtests",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/GraphTests.java",
+      "status": "added",
+      "fileContentPath": "../files/GraphTests.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/GraphTests.java",
+      "line": 37,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "GraphTests",
+      "severity": "Major",
+      "note": "GraphTests groups a broad set of graph validation helpers in one large utility class."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/GraphTests.java",
+      "line": 530,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "hasOreProperty",
+      "severity": "Major",
+      "note": "hasOreProperty checks graph type, builds a vertex list, and performs nested non-adjacent vertex degree checks in one method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

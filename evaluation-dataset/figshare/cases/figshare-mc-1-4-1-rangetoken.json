@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-1-4-1-rangetoken",
+  "source": "figshare-CodeSmellsDataset-MessageChains_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/1.4.1/RangeToken.java",
+      "status": "added",
+      "fileContentPath": "../files/1.4.1/RangeToken.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/1.4.1/RangeToken.java",
+      "line": 359,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "intersectRanges",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels RangeToken.intersectRanges as a positive Message Chains method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

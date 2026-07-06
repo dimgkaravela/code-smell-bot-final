@@ -1,0 +1,26 @@
+{
+  "id": "extract-method-03",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/JetBrains/intellij-community",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "python/educational/src/com/jetbrains/edu/stepic/EduStepicConnector.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-method-03.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "python/educational/src/com/jetbrains/edu/stepic/EduStepicConnector.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "getCourses",
+      "note": "Extract Method private addCoursesFromStepic(result List<CourseInfo>, pageNumber int) : boolean extracted from public getCourses() : List<CourseInfo> in class com.jetbrains.edu.stepic.EduStepicConnector",
+      "suggestedRefactoring": "Extract Method",
+      "refactoringNote": "Extract Method private addCoursesFromStepic(result List<CourseInfo>, pageNumber int) : boolean extracted from public getCourses() : List<CourseInfo> in class com.jetbrains.edu.stepic.EduStepicConnector"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/code-smell-bot/evaluation-case.schema.json",
+  "title": "Code Smell Bot Evaluation Case",
+  "type": "object",
+  "required": ["id", "files", "labels"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string",
+      "description": "Display repository name used in the prompt."
+    },
+    "prNumber": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "evaluateDetection": {
+      "type": "boolean",
+      "description": "When true, score detection predictions even if no detection labels exist. When false, skip detection scoring for this case. If absent, use run-level setting or auto inference."
+    },
+    "evaluateRefactoring": {
+      "type": "boolean",
+      "description": "When true, score refactoring predictions even if no refactoring labels exist. When false, skip refactoring scoring for this case. If absent, use run-level setting or auto inference."
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["filename"],
+        "additionalProperties": false,
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["added", "modified", "removed", "renamed", "changed"]
+          },
+          "previousFilename": {
+            "type": "string"
+          },
+          "additions": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "deletions": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "changes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "diff": {
+            "type": "string",
+            "description": "Optional unified diff. If absent, the runner creates an all-added diff from file content."
+          },
+          "diffPath": {
+            "type": "string"
+          },
+          "fileContent": {
+            "type": "string"
+          },
+          "fileContentPath": {
+            "type": "string"
+          },
+          "supportingFiles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["path", "content"],
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "relation": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["file", "line", "targetType", "targetName"],
+        "additionalProperties": false,
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Use 0 when the source dataset has file/method-level labels but no line number."
+          },
+          "rule": {
+            "type": "string",
+            "enum": [
+              "",
+              "Long Method",
+              "Long Parameter List",
+              "Duplicate Code",
+              "Duplicate Code Inside a Method",
+              "Large Class",
+              "Feature Envy",
+              "Message Chains"
+            ]
+          },
+          "targetType": {
+            "type": "string",
+            "enum": ["", "METHOD", "CLASS"],
+            "description": "Use METHOD for method-scoped smells and CLASS for Large Class."
+          },
+          "targetName": {
+            "type": "string",
+            "description": "Method or class name used as the primary smell identity in target-based validation."
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["Blocker", "Major", "Minor"]
+          },
+          "note": {
+            "type": "string"
+          },
+          "suggestedRefactoring": {
+            "type": "string"
+          },
+          "refactoringNote": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

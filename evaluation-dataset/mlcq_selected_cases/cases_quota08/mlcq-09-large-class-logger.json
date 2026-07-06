@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-09-large-class-logger",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/large_class/09_Large_Class_Logger.java",
+                      "status":  "added",
+                      "fileContentPath":  "../large_class/09_Large_Class_Logger.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/large_class/09_Large_Class_Logger.java",
+                       "line":  192,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "Logger",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 11152 labels java.util.logging.Logger as blob (class) at original lines 180-1727; converted to Large Class. Source: https://github.com/google/j2objc/blob/471504a735b48d5d4ace51afa1542cc4790a921a/jre_emul/android/platform/libcore/ojluni/src/main/java/java/util/logging/Logger.java/#L180-L1727"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

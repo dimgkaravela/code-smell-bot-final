@@ -1,0 +1,26 @@
+{
+  "id": "move-attribute-06",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/hierynomus/sshj",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "src/itest/java/nl/javadude/sshj/connection/channel/ChannelCloseEofTest.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-attribute-06.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/itest/java/nl/javadude/sshj/connection/channel/ChannelCloseEofTest.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "CLASS",
+      "targetName": "ChannelCloseEofTest",
+      "note": "Move Attribute private sshClient : SSHClient from class nl.javadude.sshj.connection.channel.ChannelCloseEofTest to private sshClient : SSHClient from class com.hierynomus.sshj.connection.channel.ChannelCloseEofTest",
+      "suggestedRefactoring": "Move Attribute",
+      "refactoringNote": "Move Attribute private sshClient : SSHClient from class nl.javadude.sshj.connection.channel.ChannelCloseEofTest to private sshClient : SSHClient from class com.hierynomus.sshj.connection.channel.ChannelCloseEofTest"
+    }
+  ]
+}

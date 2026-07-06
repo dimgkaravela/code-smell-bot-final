@@ -1,0 +1,34 @@
+{
+  "id": "sacs-jsprit-prettyalgorithmbuilder",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/PrettyAlgorithmBuilder.java",
+      "status": "added",
+      "fileContentPath": "../files/PrettyAlgorithmBuilder.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/PrettyAlgorithmBuilder.java",
+      "line": 70,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "setRandom",
+      "severity": "Major",
+      "note": "setRandom is labeled as Feature Envy toward SearchStrategyManager because it only forwards random configuration to that collaborator."
+    },
+    {
+      "file": "evaluation-dataset/SACS/files/PrettyAlgorithmBuilder.java",
+      "line": 86,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "build",
+      "severity": "Major",
+      "note": "build assembles constraints, listeners, strategies, algorithm services, and final configuration in one long method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

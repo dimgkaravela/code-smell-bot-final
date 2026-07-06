@@ -1,0 +1,69 @@
+{
+  "id": "smellycode-customer",
+  "source": "SmellyCodeDataset-derived",
+  "repository": "evaluation/smellycode",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/main/java/example/Customer.java",
+      "status": "added",
+      "fileContentPath": "../files/Customer.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/example/Customer.java",
+      "line": 24,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "orderPizza",
+      "severity": "Major",
+      "note": "orderPizza mostly delegates order behavior to Shop instead of keeping meaningful behavior in Customer."
+    },
+    {
+      "file": "src/main/java/example/Customer.java",
+      "line": 41,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "longComplaintMethod",
+      "severity": "Major",
+      "note": "longComplaintMethod handles many complaint scenarios and receipt behavior in one method."
+    },
+    {
+      "file": "src/main/java/example/Customer.java",
+      "line": 52,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "orderWithUnnecessaryDetails",
+      "severity": "Major",
+      "note": "orderWithUnnecessaryDetails takes six scalar values that should be grouped into an order request object."
+    },
+    {
+      "file": "src/main/java/example/Customer.java",
+      "line": 59,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "duplicateComplaint",
+      "severity": "Minor",
+      "note": "duplicateComplaint repeats the same complaint calls inside one method."
+    },
+    {
+      "file": "src/main/java/example/Customer.java",
+      "line": 69,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "chainOfMethods",
+      "severity": "Minor",
+      "note": "chainOfMethods navigates from pizzaShop to cashier to chef before invoking behavior."
+    },
+    {
+      "file": "src/main/java/example/Customer.java",
+      "line": 147,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "accessInternalDetails",
+      "severity": "Minor",
+      "note": "accessInternalDetails navigates through pizzaShop, cashier, and chef to inspect internal state."
+    }
+  ]
+}

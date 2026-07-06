@@ -1,0 +1,26 @@
+{
+  "id": "softdevii-2025-approximatesearchstrategy",
+  "source": "SoftDevII-Project-2025-Backlog-derived",
+  "repository": "evaluation/softdevii-2025",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/main/java/myy803/socialbookstore/datamodel/searchstrategies/ApproximateSearchStrategy.java",
+      "status": "added",
+      "fileContentPath": "../files/ApproximateSearchStrategy.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/myy803/socialbookstore/datamodel/searchstrategies/ApproximateSearchStrategy.java",
+      "line": 21,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "search",
+      "severity": "Major",
+      "note": "search() duplicates the core search algorithm in ExactSearchStrategy; the strategies differ only in how the initial book list is retrieved and how author matching is checked.",
+      "suggestedRefactoring": "Form Template Method",
+      "refactoringNote": "Move the shared search algorithm into an abstract search-strategy base class and keep makeInitialListOfBooks() and checkIfAuthorsMatch() as strategy-specific steps."
+    }
+  ]
+}

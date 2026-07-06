@@ -1,0 +1,26 @@
+{
+  "id": "move-method-07",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/undertow-io/undertow",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "core/src/main/java/io/undertow/predicate/PredicateParser.java",
+      "status": "modified",
+      "fileContentPath": "../files/move-method-07.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "core/src/main/java/io/undertow/predicate/PredicateParser.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "isOperator",
+      "note": "Move Method private isOperator(op String) : boolean from class io.undertow.predicate.PredicateParser to private isOperator(op String) : boolean from class io.undertow.server.handlers.builder.PredicatedHandlersParser",
+      "suggestedRefactoring": "Move Method",
+      "refactoringNote": "Move Method private isOperator(op String) : boolean from class io.undertow.predicate.PredicateParser to private isOperator(op String) : boolean from class io.undertow.server.handlers.builder.PredicatedHandlersParser"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "extract-method-09",
+  "source": "RefactoringMiner oracle",
+  "repository": "https://github.com/fabric8io/fabric8",
+  "evaluateDetection": false,
+  "evaluateRefactoring": true,
+  "files": [
+    {
+      "filename": "fabric8-maven-plugin/src/main/java/io/fabric8/maven/JsonMojo.java",
+      "status": "modified",
+      "fileContentPath": "../files/extract-method-09.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "fabric8-maven-plugin/src/main/java/io/fabric8/maven/JsonMojo.java",
+      "line": 0,
+      "rule": "",
+      "targetType": "METHOD",
+      "targetName": "getLivenessProbe",
+      "note": "Extract Method protected getProbe(prefix String) : Probe extracted from protected getLivenessProbe() : Probe in class io.fabric8.maven.JsonMojo",
+      "suggestedRefactoring": "Extract Method",
+      "refactoringNote": "Extract Method protected getProbe(prefix String) : Probe extracted from protected getLivenessProbe() : Probe in class io.fabric8.maven.JsonMojo"
+    }
+  ]
+}

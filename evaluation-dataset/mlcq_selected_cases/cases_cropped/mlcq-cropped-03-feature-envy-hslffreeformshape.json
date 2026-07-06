@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-03-feature-envy-hslffreeformshape",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/03_Feature_Envy_HSLFFreeformShape.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/03_Feature_Envy_HSLFFreeformShape.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/03_Feature_Envy_HSLFFreeformShape.java",
+                       "line":  37,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "setPath",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 10138 labels org.apache.poi.hslf.usermodel.HSLFFreeformShape#setPath Path2D as feature envy (function) at original lines 107-198; converted to Feature Envy. Cropped local source lines 89-233. Source: https://github.com/apache/poi/blob/351623a86924dab9c565e08e8cecfe151522c448/src/scratchpad/src/org/apache/poi/hslf/usermodel/HSLFFreeformShape.java/#L107-L198"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

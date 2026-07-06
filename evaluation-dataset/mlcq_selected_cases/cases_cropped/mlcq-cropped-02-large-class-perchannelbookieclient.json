@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-02-large-class-perchannelbookieclient",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/02_Large_Class_PerChannelBookieClient.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/large_class/02_Large_Class_PerChannelBookieClient.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/large_class/02_Large_Class_PerChannelBookieClient.java",
+                       "line":  23,
+                       "rule":  "Large Class",
+                       "targetType":  "CLASS",
+                       "targetName":  "PerChannelBookieClient",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 8225 labels org.apache.bookkeeper.proto.PerChannelBookieClient as blob (class) at original lines 145-2425; converted to Large Class. Cropped local source lines 145-2437. Source: https://github.com/apache/bookkeeper/blob/f26a4cae0e9205ad391c6d4d79f2937871864c28/bookkeeper-server/src/main/java/org/apache/bookkeeper/proto/PerChannelBookieClient.java/#L145-L2425"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

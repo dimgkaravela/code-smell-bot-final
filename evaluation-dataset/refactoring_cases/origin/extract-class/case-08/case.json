@@ -1,0 +1,12 @@
+{
+  "id": "extract-class-08",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Class",
+  "repository": "https://github.com/spring-projects/spring-boot",
+  "commit": "becced5f0b7bac8200df7a5706b568687b517b90",
+  "parentCommit": "c13ff96b783acbfb6d26d33010dc76812ca66a71",
+  "commitUrl": "https://github.com/spring-projects/spring-boot/commit/becced5f0b7bac8200df7a5706b568687b517b90",
+  "beforeFile": "spring-boot-actuator/src/main/java/org/springframework/boot/actuate/system/ApplicationPidFileWriter.java",
+  "afterFile": "spring-boot-actuator/src/main/java/org/springframework/boot/actuate/system/ApplicationPidFileWriter.java",
+  "description": "Extract Class org.springframework.boot.actuate.system.ApplicationPidFileWriter.SpringProperty from class org.springframework.boot.actuate.system.ApplicationPidFileWriter"
+}

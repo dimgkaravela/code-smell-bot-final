@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-07-long-method-italianstemmer",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/long_method/07_Long_Method_ItalianStemmer.java",
+                      "status":  "added",
+                      "fileContentPath":  "../long_method/07_Long_Method_ItalianStemmer.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/long_method/07_Long_Method_ItalianStemmer.java",
+                       "line":  269,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "r_prelude",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 2241 labels org.tartarus.snowball.ext.ItalianStemmer#r_prelude as long method (function) at original lines 257-401; converted to Long Method. Source: https://github.com/apache/lucene-solr/blob/bca22d58e2d126ec6d349d375d3ea028892104e1/lucene/analysis/common/src/java/org/tartarus/snowball/ext/ItalianStemmer.java/#L257-L401"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

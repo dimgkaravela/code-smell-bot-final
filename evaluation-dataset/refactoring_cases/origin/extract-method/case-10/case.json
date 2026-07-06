@@ -1,0 +1,12 @@
+{
+  "id": "extract-method-10",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Method",
+  "repository": "https://github.com/puniverse/quasar",
+  "commit": "c22d40fab8dfe4c5cad9ba582caf0855ff64b324",
+  "parentCommit": "8b82ea055d01298d0cbac886d3f59230418dfb8e",
+  "commitUrl": "https://github.com/puniverse/quasar/commit/c22d40fab8dfe4c5cad9ba582caf0855ff64b324",
+  "beforeFile": "quasar-reactive-streams/src/main/java/co/paralleluniverse/strands/channels/reactivestreams/ChannelSubscriber.java",
+  "afterFile": "quasar-reactive-streams/src/main/java/co/paralleluniverse/strands/channels/reactivestreams/ChannelSubscriber.java",
+  "description": "Extract Method protected failedSubscribe(s Subscription) : void extracted from public onSubscribe(s Subscription) : void in class co.paralleluniverse.strands.channels.reactivestreams.ChannelSubscriber"
+}

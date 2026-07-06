@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-1-2-1-regexparser",
+  "source": "figshare-CodeSmellsDataset-MessageChains_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/1.2.1/RegexParser.java",
+      "status": "added",
+      "fileContentPath": "../files/1.2.1/RegexParser.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/1.2.1/RegexParser.java",
+      "line": 425,
+      "rule": "Message Chains",
+      "targetType": "METHOD",
+      "targetName": "processStar",
+      "severity": "Minor",
+      "note": "MessageChains_positive.csv labels RegexParser.processStar as a positive Message Chains method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

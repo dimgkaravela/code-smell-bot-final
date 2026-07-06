@@ -1,0 +1,25 @@
+{
+  "id": "figshare-mc-2-2-6-logger",
+  "source": "figshare-CodeSmellsDataset-LongParameterList_positive.csv",
+  "repository": "evaluation/figshare",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/figshare/files/2.2.6/Logger.java",
+      "status": "added",
+      "fileContentPath": "../files/2.2.6/Logger.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/figshare/files/2.2.6/Logger.java",
+      "line": 1275,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "newIndex",
+      "severity": "Major",
+      "note": "LongParameterList_positive.csv labels Logger.newIndex as a positive Long Parameter List method."
+    }
+  ],
+  "evaluateRefactoring": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "sacs-freeplane-jtoolbarcomponentbuilder",
+  "source": "SACS-derived",
+  "repository": "evaluation/SACS",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "evaluation-dataset/SACS/files/JToolbarComponentBuilder.java",
+      "status": "added",
+      "fileContentPath": "../files/JToolbarComponentBuilder.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "evaluation-dataset/SACS/files/JToolbarComponentBuilder.java",
+      "line": 29,
+      "rule": "Feature Envy",
+      "targetType": "METHOD",
+      "targetName": "visit",
+      "severity": "Major",
+      "note": "visit is labeled as Feature Envy toward Entry because it repeatedly queries and configures Entry-related state while building toolbar components."
+    }
+  ],
+  "evaluateRefactoring": false
+}

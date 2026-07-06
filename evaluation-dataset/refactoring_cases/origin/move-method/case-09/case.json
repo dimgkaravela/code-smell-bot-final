@@ -1,0 +1,12 @@
+{
+  "id": "move-method-09",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Move Method",
+  "repository": "https://github.com/hierynomus/sshj",
+  "commit": "7c26ac669a4e17ca1d2319a5049a56424fd33104",
+  "parentCommit": "1c5b462206cb21dc749eaa2bed2676b96affeb7b",
+  "commitUrl": "https://github.com/hierynomus/sshj/commit/7c26ac669a4e17ca1d2319a5049a56424fd33104",
+  "beforeFile": "src/itest/java/nl/javadude/sshj/connection/channel/ChannelCloseEofTest.java",
+  "afterFile": "src/test/java/com/hierynomus/sshj/connection/channel/ChannelCloseEofTest.java",
+  "description": "Move Method public shouldCorrectlyHandleSessionChannelEof() : void from class nl.javadude.sshj.connection.channel.ChannelCloseEofTest to public shouldCorrectlyHandleSessionChannelEof() : void from class com.hierynomus.sshj.connection.channel.ChannelCloseEofTest"
+}

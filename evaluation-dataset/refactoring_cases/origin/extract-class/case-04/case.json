@@ -1,0 +1,12 @@
+{
+  "id": "extract-class-04",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Class",
+  "repository": "https://github.com/jfinal/jfinal",
+  "commit": "881baed894540031bd55e402933bcad28b74ca88",
+  "parentCommit": "1f06ed84f88225fd3d5689f2db36ba311cc19ea9",
+  "commitUrl": "https://github.com/jfinal/jfinal/commit/881baed894540031bd55e402933bcad28b74ca88",
+  "beforeFile": "src/com/jfinal/config/Constants.java",
+  "afterFile": "src/com/jfinal/config/Constants.java",
+  "description": "Extract Class com.jfinal.i18n.I18n from class com.jfinal.config.Constants"
+}

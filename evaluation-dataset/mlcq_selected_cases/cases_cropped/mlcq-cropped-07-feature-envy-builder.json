@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-07-feature-envy-builder",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/07_Feature_Envy_Builder.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/07_Feature_Envy_Builder.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/07_Feature_Envy_Builder.java",
+                       "line":  36,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "build",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 3061 labels com.oracle.bmc.budget.model.CreateBudgetDetails.Builder#build as feature envy (function) at original lines 103-116; converted to Feature Envy. Cropped local source lines 85-158. Source: https://github.com/oracle/oci-java-sdk/blob/76e9cecd7b309d9f12e5efe96c74167c66a98872/bmc-budget/src/main/java/com/oracle/bmc/budget/model/CreateBudgetDetails.java/#L103-L116"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-cropped-02-feature-envy-depositproductdatavalidator",
+    "source":  "MLCQ-derived-cropped",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/02_Feature_Envy_DepositProductDataValidator.java",
+                      "status":  "added",
+                      "fileContentPath":  "../cropped_files/feature_envy/02_Feature_Envy_DepositProductDataValidator.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/cropped_files/feature_envy/02_Feature_Envy_DepositProductDataValidator.java",
+                       "line":  36,
+                       "rule":  "Feature Envy",
+                       "targetType":  "METHOD",
+                       "targetName":  "validateDepositDetailForUpdate",
+                       "severity":  "Major",
+                       "note":  "Cropped MLCQ id 12754 labels org.apache.fineract.portfolio.savings.data.DepositProductDataValidator#validateDepositDetailForUpdate JsonElement|FromJsonHelper|DataValidatorBuilder as feature envy (function) at original lines 413-547; converted to Feature Envy. Cropped local source lines 395-589. Source: https://github.com/apache/fineract/blob/210e380df3ca5c74c8c2fa09e7fe1cffdb87e20a/fineract-provider/src/main/java/org/apache/fineract/portfolio/savings/data/DepositProductDataValidator.java/#L413-L547"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

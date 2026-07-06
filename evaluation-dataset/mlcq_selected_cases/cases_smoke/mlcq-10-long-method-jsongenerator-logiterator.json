@@ -1,0 +1,25 @@
+{
+    "id":  "mlcq-10-long-method-jsongenerator-logiterator",
+    "source":  "MLCQ-derived",
+    "repository":  "evaluation/MLCQ",
+    "prNumber":  1,
+    "files":  [
+                  {
+                      "filename":  "evaluation-dataset/mlcq_selected_cases/long_method/10_Long_Method_JsonGenerator_LogIterator.java",
+                      "status":  "added",
+                      "fileContentPath":  "../long_method/10_Long_Method_JsonGenerator_LogIterator.java"
+                  }
+              ],
+    "labels":  [
+                   {
+                       "file":  "evaluation-dataset/mlcq_selected_cases/long_method/10_Long_Method_JsonGenerator_LogIterator.java",
+                       "line":  87,
+                       "rule":  "Long Method",
+                       "targetType":  "METHOD",
+                       "targetName":  "JsonGenerator",
+                       "severity":  "Major",
+                       "note":  "MLCQ id 623 labels org.apache.zookeeper.graph.JsonGenerator.JsonGenerator LogIterator as long method (function) at original lines 75-213; converted to Long Method. Source: https://github.com/apache/zookeeper/blob/07c3aaf3d723fb3144c0aedc0c2b655325df70e9/zookeeper-contrib/zookeeper-contrib-loggraph/src/main/java/org/apache/zookeeper/graph/JsonGenerator.java/#L75-L213"
+                   }
+               ],
+    "evaluateRefactoring":  false
+}

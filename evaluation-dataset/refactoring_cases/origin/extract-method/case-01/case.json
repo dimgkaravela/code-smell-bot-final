@@ -1,0 +1,12 @@
+{
+  "id": "extract-method-01",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Extract Method",
+  "repository": "https://github.com/realm/realm-java",
+  "commit": "6cf596df183b3c3a38ed5dd9bb3b0100c6548ebb",
+  "parentCommit": "0f290d116f4047bab19c576ea60958da11f10b4e",
+  "commitUrl": "https://github.com/realm/realm-java/commit/6cf596df183b3c3a38ed5dd9bb3b0100c6548ebb",
+  "beforeFile": "examples/migrationExample/src/main/java/io/realm/examples/realmmigrationexample/MigrationExampleActivity.java",
+  "afterFile": "examples/migrationExample/src/main/java/io/realm/examples/realmmigrationexample/MigrationExampleActivity.java",
+  "description": "Extract Method private showStatus(txt String) : void extracted from private showStatus(realm Realm) : void in class io.realm.examples.realmmigrationexample.MigrationExampleActivity"
+}

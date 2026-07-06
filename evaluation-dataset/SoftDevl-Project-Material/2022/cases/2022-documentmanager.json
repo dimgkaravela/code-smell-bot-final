@@ -1,0 +1,48 @@
+{
+  "id": "softdevii-2022-documentmanager",
+  "source": "SoftDevII-Project-2022-Backlog-derived",
+  "repository": "evaluation/softdevii-2022",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/model/DocumentManager.java",
+      "status": "added",
+      "fileContentPath": "../files/DocumentManager.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/model/DocumentManager.java",
+      "line": 8,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "DocumentManager",
+      "severity": "Major",
+      "note": "The constructor repeatedly creates a Document, obtains template contents, and inserts the document into the templates map.",
+      "suggestedRefactoring": "Substitute Algorithm",
+      "refactoringNote": "Store template names and contents in a map or external files, then loop over the entries to create and register Document objects."
+    },
+    {
+      "file": "src/model/DocumentManager.java",
+      "line": 35,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "getContents",
+      "severity": "Major",
+      "note": "getContents() contains a large conditional algorithm and embeds all article, book, letter, and report template contents in one method.",
+      "suggestedRefactoring": "Substitute Algorithm",
+      "refactoringNote": "Replace the conditional template-selection algorithm with a map from template names to contents, or load each template from a separate file."
+    },
+    {
+      "file": "src/model/DocumentManager.java",
+      "line": 35,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "getContents",
+      "severity": "Major",
+      "note": "getContents() repeats similar LaTeX document fragments and string-concatenation structures across its template branches.",
+      "suggestedRefactoring": "Substitute Algorithm",
+      "refactoringNote": "Represent each template as data in a map or external file rather than maintaining repeated construction branches in getContents()."
+    }
+  ]
+}

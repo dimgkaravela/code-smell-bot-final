@@ -1,0 +1,37 @@
+{
+  "id": "softdevii-2021-outputsystem",
+  "source": "SoftDevII-Project-2021-Backlog-derived",
+  "repository": "evaluation/softdevii-2021",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/outputManagePackage/OutputSystem.java",
+      "status": "added",
+      "fileContentPath": "../files/OutputSystem.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/outputManagePackage/OutputSystem.java",
+      "line": 21,
+      "rule": "Large Class",
+      "targetType": "CLASS",
+      "targetName": "OutputSystem",
+      "severity": "Major",
+      "note": "OutputSystem combines multiple responsibilities: writing updated taxpayer files, generating TXT/XML reports, constructing pie charts, and constructing bar charts.",
+      "suggestedRefactoring": "Extract Class",
+      "refactoringNote": "Split the class into separate responsibilities for updated-file output, report generation, and chart generation, as required by the backlog."
+    },
+    {
+      "file": "src/outputManagePackage/OutputSystem.java",
+      "line": 45,
+      "rule": "Duplicate Code",
+      "targetType": "METHOD",
+      "targetName": "saveUpdatedTaxpayerTxtInputFile",
+      "severity": "Major",
+      "note": "The TXT and XML output methods repeat the same taxpayer and receipt traversal logic while differing mainly in labels, opening tags, and closing tags.",
+      "suggestedRefactoring": "Parameterize Method",
+      "refactoringNote": "Extract a shared report-writing workflow and parameterize the format-specific labels or tags used by TXT and XML output."
+    }
+  ]
+}

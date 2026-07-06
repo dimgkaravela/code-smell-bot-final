@@ -1,0 +1,71 @@
+name: PR LLM Smell Report
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write   # needed to post PR comments
+
+concurrency:
+  group: pr-llm-${{ github.event.pull_request.head.repo.full_name }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: 'maven'
+
+      - name: Build shaded jar
+        run: mvn -q -DskipTests package
+
+      - name: List target
+        run: ls -lah target
+
+      - name: Run code smell bot (gemini)
+        env:
+          # --- GitHub context
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+          REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          POST_COMMENT: "true"
+          FETCH_CONTENTS: "true"
+          FETCH_RELATED_FILES: "true"
+          MAX_FILES: "0"
+
+          # --- LLM selection (pick one provider + key)
+          LLM_PROVIDER: gemini           
+          GEMINI_MODEL: gemini-3.1-flash-lite
+          
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+          # LLM chunking and context tuning
+          LLM_MAX_FILES_PER_CHUNK: "4"
+          LLM_MAX_PATCH_CHARS: "18000"
+          MAX_FILE_CONTENT_CHARS: "12000"
+          MAX_RELATED_FILES_PER_FILE: "2"
+          MAX_RELATED_FILE_CHARS: "4000"
+        run: |
+          set -e
+          JAR="target/code-smell-bot-0.1.0-SNAPSHOT.jar"
+          echo "Running: $JAR"
+          java -jar "$JAR"
+
+      - name: Upload bot output artifact (for debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-smell-bot-out
+          path: out/
+          if-no-files-found: warn

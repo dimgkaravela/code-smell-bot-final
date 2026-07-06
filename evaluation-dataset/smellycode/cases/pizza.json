@@ -1,0 +1,51 @@
+{
+  "id": "smellycode-pizza",
+  "source": "SmellyCodeDataset-derived",
+  "repository": "evaluation/smellycode",
+  "prNumber": 1,
+  "files": [
+    {
+      "filename": "src/main/java/example/Pizza.java",
+      "status": "added",
+      "fileContentPath": "../files/Pizza.java"
+    }
+  ],
+  "labels": [
+    {
+      "file": "src/main/java/example/Pizza.java",
+      "line": 52,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "updateCustomerInfo",
+      "severity": "Major",
+      "note": "updateCustomerInfo takes five related customer contact fields that should be grouped into a parameter object."
+    },
+    {
+      "file": "src/main/java/example/Pizza.java",
+      "line": 120,
+      "rule": "Long Method",
+      "targetType": "METHOD",
+      "targetName": "longMethod",
+      "severity": "Major",
+      "note": "longMethod combines pizza state updates, customer information updates, notifications, discounts, loyalty, and complaint handling."
+    },
+    {
+      "file": "src/main/java/example/Pizza.java",
+      "line": 134,
+      "rule": "Long Parameter List",
+      "targetType": "METHOD",
+      "targetName": "orderWithUnnecessaryDetails",
+      "severity": "Major",
+      "note": "orderWithUnnecessaryDetails takes six scalar values that should be grouped into an order request object."
+    },
+    {
+      "file": "src/main/java/example/Pizza.java",
+      "line": 144,
+      "rule": "Duplicate Code Inside a Method",
+      "targetType": "METHOD",
+      "targetName": "duplicateMethod",
+      "severity": "Minor",
+      "note": "duplicateMethod repeats the same setTopping(\"Cheese\") call inside one method."
+    }
+  ]
+}

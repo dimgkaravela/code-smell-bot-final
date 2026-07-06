@@ -1,0 +1,12 @@
+{
+  "id": "move-method-04",
+  "source": "RefactoringMiner oracle",
+  "expectedRefactoring": "Move Method",
+  "repository": "https://github.com/liferay/liferay-portal",
+  "commit": "59fd9e696cec5f2ed44c27422bbc426b11647321",
+  "parentCommit": "47ecaacee200fda183c6adf195e6891b898c9edf",
+  "commitUrl": "https://github.com/liferay/liferay-portal/commit/59fd9e696cec5f2ed44c27422bbc426b11647321",
+  "beforeFile": "modules/sdk/gradle-util/src/com/liferay/gradle/util/GradleUtil.java",
+  "afterFile": "modules/sdk/gradle-util/src/com/liferay/gradle/util/GradleUtil.java",
+  "description": "Move Method public addDependency(project Project, configurationName String, group String, name String, version String, classifier String) : Dependency from class com.liferay.gradle.plugins.poshi.runner.util.GradleUtil to public addDependency(project Project, configurationName String, group String, name String, version String, classifier String, transitive boolean) : Dependency from class com.liferay.gradle.util.GradleUtil"
+}

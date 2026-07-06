@@ -79,21 +79,38 @@ public final class ReportRenderer {
         md.append("| File | Line | Rule | Severity | Note | Suggested Refactoring |\n");
         md.append("|---|---:|---|---|---|---|\n");
         for (LlmFinding finding : findings) {
-            md.append("| ").append(nvl(finding.file(), "?")).append(" | ")
+            md.append("| ").append(escapeMd(nvl(finding.file(), "?"))).append(" | ")
                     .append(finding.line()).append(" | ")
                     .append(escapeMd(nvl(finding.rule(), ""))).append(" | ")
                     .append(escapeMd(nvl(finding.severity(), ""))).append(" | ")
                     .append(escapeMd(nvl(finding.note(), ""))).append(" | ")
                     .append(escapeMd(nvl(finding.suggestedRefactoring(), ""))).append(" |\n");
-
-            if (finding.refactoringNote() != null && !finding.refactoringNote().isBlank()) {
-                md.append("\n<details><summary>Refactoring note</summary>\n\n")
-                        .append("```text\n")
-                        .append(finding.refactoringNote().trim())
-                        .append("\n```\n</details>\n\n");
-            }
         }
+        appendRefactoringNotes(md, findings);
         return md.toString();
+    }
+
+    private static void appendRefactoringNotes(StringBuilder md, List<LlmFinding> findings) {
+        List<LlmFinding> findingsWithNotes = findings.stream()
+                .filter(finding -> finding.refactoringNote() != null && !finding.refactoringNote().isBlank())
+                .toList();
+        if (findingsWithNotes.isEmpty()) {
+            return;
+        }
+
+        md.append("\n### Refactoring notes\n\n");
+        for (LlmFinding finding : findingsWithNotes) {
+            md.append("<details>\n")
+                    .append("<summary>")
+                    .append(escapeHtml(nvl(finding.file(), "?")))
+                    .append(":")
+                    .append(finding.line())
+                    .append(" \u2014 ")
+                    .append(escapeHtml(nvl(finding.rule(), "")))
+                    .append("</summary>\n\n")
+                    .append(finding.refactoringNote().trim())
+                    .append("\n\n</details>\n\n");
+        }
     }
 
     public static String renderConsoleSummary(String repository,
@@ -164,7 +181,13 @@ public final class ReportRenderer {
     }
 
     private static String escapeMd(String value) {
-        return value == null ? "" : value.replace("|", "\\|");
+        return value == null ? "" : value.replace("\r", " ").replace("\n", " ").replace("|", "\\|");
+    }
+
+    private static String escapeHtml(String value) {
+        return value == null
+                ? ""
+                : value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
     }
 
     public static class JavaChanged {

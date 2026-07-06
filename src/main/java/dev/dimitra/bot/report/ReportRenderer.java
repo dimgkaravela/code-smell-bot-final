@@ -76,12 +76,14 @@ public final class ReportRenderer {
             return md.toString();
         }
 
-        md.append("| File | Line | Rule | Severity | Note | Suggested Refactoring |\n");
-        md.append("|---|---:|---|---|---|---|\n");
+        md.append("| File | Line | Rule | Target Type | Target Name | Severity | Note | Suggested Refactoring |\n");
+        md.append("|---|---:|---|---|---|---|---|---|\n");
         for (LlmFinding finding : findings) {
             md.append("| ").append(escapeMd(nvl(finding.file(), "?"))).append(" | ")
                     .append(finding.line()).append(" | ")
                     .append(escapeMd(nvl(finding.rule(), ""))).append(" | ")
+                    .append(escapeMd(nvl(finding.targetType(), ""))).append(" | ")
+                    .append(escapeMd(nvl(finding.targetName(), ""))).append(" | ")
                     .append(escapeMd(nvl(finding.severity(), ""))).append(" | ")
                     .append(escapeMd(nvl(finding.note(), ""))).append(" | ")
                     .append(escapeMd(nvl(finding.suggestedRefactoring(), ""))).append(" |\n");

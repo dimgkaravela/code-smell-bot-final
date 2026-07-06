@@ -16,6 +16,8 @@ class ReportRendererTest {
                         "experiments/smellycode/Cashier.java",
                         8,
                         "Large Class",
+                        "CLASS",
+                        "Cashier",
                         "Major",
                         "The class mixes checkout | customer contact work.",
                         "Extract Class",
@@ -24,6 +26,8 @@ class ReportRendererTest {
                         "experiments/smellycode/Cashier.java",
                         87,
                         "Long Parameter List",
+                        "METHOD",
+                        "updateContactInfo",
                         "Major",
                         "The method accepts five individual string parameters.",
                         "Introduce Parameter Object",
@@ -31,10 +35,13 @@ class ReportRendererTest {
 
         String markdown = ReportRenderer.renderMarkdown(findings, List.of());
 
-        int tableHeader = markdown.indexOf("| File | Line | Rule | Severity | Note | Suggested Refactoring |");
-        int firstRow = markdown.indexOf("| experiments/smellycode/Cashier.java | 8 | Large Class | Major | "
+        int tableHeader = markdown.indexOf("| File | Line | Rule | Target Type | Target Name | Severity | Note | "
+                + "Suggested Refactoring |");
+        int firstRow = markdown.indexOf("| experiments/smellycode/Cashier.java | 8 | Large Class | CLASS | "
+                + "Cashier | Major | "
                 + "The class mixes checkout \\| customer contact work. | Extract Class |");
-        int secondRow = markdown.indexOf("| experiments/smellycode/Cashier.java | 87 | Long Parameter List | Major | "
+        int secondRow = markdown.indexOf("| experiments/smellycode/Cashier.java | 87 | Long Parameter List | "
+                + "METHOD | updateContactInfo | Major | "
                 + "The method accepts five individual string parameters. | Introduce Parameter Object |");
         int notesHeading = markdown.indexOf("### Refactoring notes");
         int firstDetails = markdown.indexOf("<details>");

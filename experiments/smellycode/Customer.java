@@ -22,6 +22,7 @@ public class Customer {
     }
 
     public void orderPizza(String pizzaType) {
+        //let's test this
         System.out.println("Customer is placing an order for " + pizzaType + " pizza.");
         this.pizzaShop.receiveOrder(pizzaType);
     }
@@ -33,9 +34,6 @@ public class Customer {
 
     public void askForReceipt() {
         System.out.println("Customer is asking for a receipt.");
-    }
-
-    public void anotherUnusedMethod() {
     }
 
     public void longComplaintMethod() {
@@ -58,6 +56,7 @@ public class Customer {
 
     public void duplicateComplaint() {
         System.out.println("Customer is complaining about duplicate issues");
+        // is this? we left message chains out let's see
         this.complain("Pizza is cold");
         this.complain("Pizza is cold");
         this.complain("Pizza is late");

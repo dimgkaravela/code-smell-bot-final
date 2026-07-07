@@ -85,10 +85,12 @@ public class Cashier {
     }
 
     public void updateContactInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
+        //add one line here too
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        //test this is edited
         this.email = email;
     }
 

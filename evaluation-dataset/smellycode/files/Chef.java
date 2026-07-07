@@ -60,6 +60,7 @@ public class Chef {
     public void updateContactInfo(String firstName, String lastName, String address, String phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
+        //add comment here
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.email = email;
@@ -142,6 +143,7 @@ public class Chef {
         this.chainOfMethods();
         this.middlemanMethod();
         this.accessInternalDetails();
+        //add comment here
     }
 
     public void orderWithUnnecessaryDetails() {
